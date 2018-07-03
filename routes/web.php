@@ -113,9 +113,7 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::get('admin', 'BackEnd\AdminController@index')->name('admin');
     Route::get('roles', 'BackEnd\RolesController@index')->name('roles');
     Route::get('crearRol', 'BackEnd\RolesController@create')->name('crearRol');
-
     Route::post('guardarRol', 'BackEnd\RolesController@store')->name('guardarRol');
-    Route::get('crearRol', 'BackEnd\RolesController@create')->name('crearRol');
     Route::get('edirol/{id}', 'BackEnd\RolesController@show')->name('edirol');
     Route::post('update/{id}', 'BackEnd\RolesController@update')->name('update');
     Route::get('eliminar/{id}', 'BackEnd\RolesController@destroy')->name('eliminar');

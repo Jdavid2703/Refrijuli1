@@ -14,7 +14,7 @@ class Rol extends Model
     protected $hidden = [
         'remember_token',
     ];
-    public function usuarios(){
+    public function x(){
         return $this->hasMany(Usuario::Class);
     }
 }
