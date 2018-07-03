@@ -44,6 +44,7 @@ class RegistroUsuController extends Controller
         $Usuarios->remember_token = str_random(10);
         $Usuarios->save();
 
+
     }
 
 
