@@ -27,9 +27,9 @@ class CreatePedidosTable extends Migration
                 ->on('usuarios');
             //termina
             $table->unsignedInteger('id_estado');
-            $table->foreign('id_usuario')
+            $table->foreign('id_estado')
                 ->references('id')
-                ->on('usuarios');
+                ->on('estados');
         });
     }
 
