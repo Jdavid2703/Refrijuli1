@@ -19,7 +19,7 @@ class CreatePedidosTable extends Migration
             $table->date('fecha_pedido');
             $table->string('direccion_entrega');
             $table->time('hora_entrga');
-
+            $table->integer('total_monto');
         });
     }
 
