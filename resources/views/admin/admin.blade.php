@@ -38,7 +38,7 @@
             </li>
 
             <li class="nav-item">
-                <h4><b><a id="categori" class="nav-link" href="#">Estado</a></b>
+                <h4><b><a id="categori" class="nav-link" href="{{route('estado')}}">Estado</a></b>
                 </h4>
             </li>
 

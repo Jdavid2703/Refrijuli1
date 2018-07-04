@@ -141,7 +141,8 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 
     Route::get('cerrarSesion', 'Auth\LoginController@cerrarSesion')->name('cerrarSesion');
 });
-
+//RUTAS ESTADO
+Route::get('estado', 'BackEnd\EstadoController@index')->name('estado');
 
 
 
