@@ -19,10 +19,10 @@
                 <h4><b><a id="informacion1" class="nav-link {{request()->is('nosotros')?'active':''}} "
                           href="{{route('informacion')}}">Información</a></b></h4>
             </li>
-            {{--<li class="nav-item">--}}
-                {{--<h4><b><a id="contactos1" class="nav-link {{request()->is('contactos')?'active':''}}"--}}
-                       {{--href="{{route('contactos')}}">Contactos</a></b></h4>--}}
-            {{--</li>--}}
+            <li class="nav-item">
+                <h4><b><a id="contactos1" class="nav-link {{request()->is('contactos')?'active':''}}"
+                          href="{{route('contactos')}}">Contactos</a></b></h4>
+            </li>
             <li class="nav-item">
                 <a href=""></a>
             </li>
