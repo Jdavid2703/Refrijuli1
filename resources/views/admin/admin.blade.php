@@ -51,9 +51,11 @@
         </ul>
 
         {{--MODAL CERRAR SESIÓN--}}
-        <li class="nav-item">
-            <a class="nav-item" data-toggle="modal" data-target="#exampleModal1"><b>Cerrar sesión</b></a>
-        </li>
+
+        <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#exampleModal1">
+            Cerrar Sesión
+        </button>
+
 
 
     </div>
@@ -78,7 +80,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">¿Está seguro?</h5>
+                <h5 class="modal-title" id="exampleModal1">¿Está seguro?</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>

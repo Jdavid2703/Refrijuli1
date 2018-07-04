@@ -1,17 +1,14 @@
-
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-3">
         </div>
 
         <div align="center" class="col-md-6">
-            <h1><b>CONTACTENOS</b></h1>
-            <br>
             <p>La Empresa <b>RefriJuli</b> se encuentra ubicada en el barrio la Castellana calle 33#81a-15
                 en la ciudad de Medellín. Domicilios en todo el valle de aburrá.
             </p>
             <p><b>Refrijuli@comidas.com -</b>
-            <b>(+57) 310 812 3436</b>
+                <b>(+57) 310 812 3436</b>
             </p>
             <ul class="list-inline banner-social-buttons">
                 <li class="list-inline-item">

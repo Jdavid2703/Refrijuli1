@@ -5,8 +5,6 @@
         </div>
 
         <div align="center" class="col-md-6">
-            <h1><b>INFORMACIÓN</b></h1>
-            <br>
             <p align="justify"><b>RefiJuli</b> es una empresa que se dedica a fabricar y distribuir refrigerios
                 especificamente para
                 eventos. La calidad de nuestros productos, la puntualidad y el compromiso hacen parte fundamental de
