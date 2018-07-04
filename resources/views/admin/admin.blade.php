@@ -11,19 +11,43 @@
 
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item ">
-                <h4><b><a id="home1" class="nav-link" href="{{route('usuarios')}}">Usuarios<span
+                <h4><b><a id="users" class="nav-link" href="{{route('usuarios')}}">Usuarios<span
                                     class="sr-only">(current)</span> </a></b></h4>
             </li>
             <li class="nav-item">
-                <h4><b><a id="informacion1" class="nav-link" href="{{route('roles')}}">Roles</a></b></h4>
+                <h4><b><a id="roless" class="nav-link" href="{{route('roles')}}">Roles</a></b></h4>
             </li>
+            {{--<li class="nav-item">--}}
+                {{--<h4><b><a id="tipD" class="nav-link" href="{{route('tipoDocumentos')}}">Tipo de Documentos</a></b>--}}
+                {{--</h4>--}}
+            {{--</li>--}}
+
             <li class="nav-item">
-                <h4><b><a id="contactos1" class="nav-link" href="{{route('tipoDocumentos')}}">Tipo de Documentos</a></b>
+                <h4><b><a id="categori" class="nav-link" href="#">Categorias</a></b>
                 </h4>
             </li>
+
             <li class="nav-item">
-                <a href=""></a>
+                <h4><b><a id="categori" class="nav-link" href="#">Productos</a></b>
+                </h4>
             </li>
+
+            <li class="nav-item">
+                <h4><b><a id="categori" class="nav-link" href="#">Pedidos</a></b>
+                </h4>
+            </li>
+
+            <li class="nav-item">
+                <h4><b><a id="categori" class="nav-link" href="#">Estado</a></b>
+                </h4>
+            </li>
+
+            <li class="nav-item">
+                <h4><b><a id="categori" class="nav-link" href="#">Unidades</a></b>
+                </h4>
+            </li>
+
+
         </ul>
 
         {{--MODAL CERRAR SESIÓN--}}
