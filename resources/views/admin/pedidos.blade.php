@@ -47,7 +47,7 @@ if (!$enlace) {
                     <td><?php echo $mostrar['id']?></td>
                     <td><?php echo $mostrar['descripcion']?></td>
 
-jajaj
+jajajja
 
                 </tr>
                 <?php
