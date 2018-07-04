@@ -129,6 +129,9 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::post('guardarUsuario', 'BackEnd\RegistroUsuController@store')->name('guardarUsuario');
     Route::get('ediUsuario/{id}', 'BackEnd\RegistroUsuController@show')->name('ediUsuario');
 
+//   RUTAS PRODUCTO
+    Route::get('producto', 'BackEnd\RegistroProductoController@index')->name('producto');
+
 
     Route::get('tipoDocumentos', 'BackEnd\TipoDocumentoController@index')->name('tipoDocumentos');
 
