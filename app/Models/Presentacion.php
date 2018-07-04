@@ -14,7 +14,7 @@ class Presentacion extends Model
     protected $hidden = [
         'remember_token',
     ];
-    public function insumos(){
+    public function insum(){
         return $this->hasMany(Insumo::Class);
     }
 }
