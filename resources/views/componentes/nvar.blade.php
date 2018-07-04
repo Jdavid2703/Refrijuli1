@@ -23,6 +23,7 @@
                 <h4><b><a id="contactos1" class="nav-link {{request()->is('contactos')?'active':''}}"
                           href="{{route('contactos')}}">Contactos</a></b></h4>
             </li>
+
             <li class="nav-item">
                 <a href=""></a>
             </li>

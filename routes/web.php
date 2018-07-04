@@ -15,6 +15,7 @@
 //                  Rutas sin agrupar
 //======================================================================
 
+////************************  TIPOS DD DOCUMENTO******************
 
 /*route::get('test',function (){
    $usuario = new App\models\TipoDocumento();
@@ -71,13 +72,13 @@
 
 /*route::get('test',function (){
     $usuario = new App\Models\Usuario;
-    $usuario->nombre ='Catalina';
-    $usuario->apellido ='Gonzalez';
+    $usuario->nombre ='Juan';
+    $usuario->apellido ='Hernandez';
    $usuario->correo = 'gonzy@hotmail.com';
-    $usuario->numero = '74859632';
-    $usuario->usuario = 'cata';
+    $usuario->numero = '1193579344';
+    $usuario->usuario = 'juan';
     $usuario->password = bcrypt('123');
-    $usuario->tipo_documentos_id = '2';
+    $usuario->tipo_documentos_id = '1';
     $usuario->save();
     return $usuario;
 });*/
@@ -128,13 +129,15 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::get('usuarios', 'BackEnd\UsuariosRegistradosController@index')->name('usuarios');
     Route::get('registro', 'BackEnd\RegistroUsuController@index')->name('registro');
     Route::post('guardarUsuario', 'BackEnd\RegistroUsuController@store')->name('guardarUsuario');
-    Route::get('ediUsuario/{id}', 'BackEnd\RegistroUsuController@show')->name('ediUsuario');
+    Route::get('ediUsuario/{id}', 'BackEnd\UsuariosRegistradosController@show')->name('ediUsuario');
+    Route::post('updateUsuario/{id}', 'BackEnd\UsuariosRegistradosController@update')->name('updateUsuario');
+    Route::get('eliminarUsuario/{id}', 'BackEnd\UsuariosRegistradosController@destroy')->name('eliminarUsuario');
 
 //   RUTAS PRODUCTO
     Route::get('producto', 'BackEnd\RegistroProductoController@index')->name('producto');
 
 
-//RUTAS CATEGORIAS
+//  RUTAS CATEGORIAS
     Route::get('categoria', 'BackEnd\CategoriaController@index')->name('categoria');
 
     Route::get('tipoDocumentos', 'BackEnd\TipoDocumentoController@index')->name('tipoDocumentos');

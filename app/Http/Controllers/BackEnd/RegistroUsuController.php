@@ -53,8 +53,7 @@ class RegistroUsuController extends Controller
 
     public function show($id)
     {
-        $usuario = Usuario::find($id);
-        return view('admin.editarUsuario',compact('usuario'));
+
     }
 
 
@@ -66,28 +65,7 @@ class RegistroUsuController extends Controller
 
     public function update(Request $request, $id)
     {
-        $credenciales = $this->validate($request,[
-            'nombre'=>'required',
-            'apellido'=>'required',
-            'numero'=>'required',
-            'tipo_documentos_id'=>'required',
-            'correo'=>'required',
-            'usuario'=>'required',
-            'password'=>'required',
 
-
-        ]);
-        $usuario = Usuario::find($id);
-        $usuario->usuario = $request->input('nombre');
-        $usuario->usuario = $request->input('apellido');
-        $usuario->usuario = $request->input('numero');
-        $usuario->usuario = $request->input('tipo_documentos_id');
-        $usuario->usuario = $request->input('correo');
-        $usuario->usuario = $request->input('usuario');
-        $usuario->usuario = $request->input('password');
-
-        $usuario->save();
-        return redirect()->route('usuarios');
     }
 
 

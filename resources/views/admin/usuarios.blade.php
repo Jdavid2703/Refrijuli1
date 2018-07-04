@@ -71,9 +71,9 @@ if (!$enlace) {
                     <td><?php echo $mostrar['usuario']?></td>
                     <td><?php echo $mostrar['rols_id']?></td>
                     <td>
-                        <a class="btn btn-primary" href="#">Eliminar</a>
+                        <a class="btn btn-primary" href="{{route('eliminarUsuario',$mostrar['id'])}}">Eliminar</a>
 
-                        <a class="btn btn-primary" href="#">Editar</a>
+                        <a class="btn btn-primary"href="{{route('ediUsuario',$mostrar['id'])}}">Editar</a>
 
 
                 </tr>

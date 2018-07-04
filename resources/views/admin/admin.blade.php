@@ -43,7 +43,17 @@
             </li>
 
             <li class="nav-item">
-                <h4><b><a id="categori" class="nav-link" href="{{route('unidad')}}">Unidades</a></b>
+                <h4><b><a id="unidadd" class="nav-link" href="{{route('unidad')}}">Unidades</a></b>
+                </h4>
+            </li>
+
+            <li class="nav-item">
+                <h4><b><a id="insumoo" class="nav-link" href="">Insumos</a></b>
+                </h4>
+            </li>
+
+            <li class="nav-item">
+                <h4><b><a id="presenta" class="nav-link" href="">Presentación</a></b>
                 </h4>
             </li>
 
