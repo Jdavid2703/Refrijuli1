@@ -13,7 +13,7 @@ class Unidad extends Model
     protected $hidden = [
         'remember_token',
     ];
-    public function insumo(){
+    public function insumos(){
         return $this->hasMany(Insumo::Class);
     }
 }
