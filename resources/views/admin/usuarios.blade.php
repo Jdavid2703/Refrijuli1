@@ -63,8 +63,7 @@ if (!$enlace) {
                 <h1><b>USUARIOS</b> </h1>
 
 
-                    <form action="">
-
+                    <form action="{{route('registro')}}">
                         <input class="btn btn-primary" type="submit" value="Nuevo">
                     </form>
 
@@ -108,8 +107,10 @@ if (!$enlace) {
                     <td><?php echo $mostrar['correo']?></td>
                     <td><?php echo $mostrar['usuario']?></td>
                     <td><?php echo $mostrar['rols_id']?></td>
-                    <td><button type="button" class="btn btn-primary">Eliminar</button>
-                        <button type="button" class="btn btn-primary">Editar</button></td>
+                    <td>
+                        <a class="btn btn-primary" href="#">Eliminar</a>
+
+                        <a class="btn btn-primary" href="#">Editar</a>
 
 
 
