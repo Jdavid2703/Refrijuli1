@@ -7,11 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Unidad extends Model
 {
     protected $fillable = [
-        'nombre','descripcion',
+        'tipo_unidad','cantidad',
     ];
 
     protected $hidden = [
-        'tipo_unidad','cantidad',
+        'remember_token',
     ];
     public function insumo(){
         return $this->hasMany(Insumo::Class);
