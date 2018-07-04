@@ -1,4 +1,4 @@
-@extends('admin.layaut.loyaut')
+    @extends('admin.layaut.loyaut')
 
 <form action="{{route('guardarUsuario')}}" method="post">
     {{csrf_field()}}

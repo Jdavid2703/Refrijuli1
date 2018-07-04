@@ -23,12 +23,12 @@
             {{--</li>--}}
 
             <li class="nav-item">
-                <h4><b><a id="categori" class="nav-link" >Categorias</a></b>
+                <h4><b><a id="categori" class="nav-link" href="{{route('categoria')}}">Categorias</a></b>
                 </h4>
             </li>
 
-            <li class="nav-item">
-                <h4><b><a id="categori" class="nav-link" href="{{route('producto')}}">Productos</a></b>
+            <li class= "nav-item">
+                <h4><b><a id="producto" class="nav-link" href="{{route('producto')}}">Productos</a></b>
                 </h4>
             </li>
 

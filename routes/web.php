@@ -34,7 +34,7 @@
 
 /*route::get('test',function (){
     $usuario = new App\models\TipoDocumento();
-   $usuario->nombre ='CE';
+    $usuario->nombre ='CE';
     $usuario->descripcion ='Cedula de extrajeria';
     $usuario->save();
     return $usuario;
@@ -113,6 +113,7 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 
     Route::get('admin', 'BackEnd\AdminController@index')->name('admin');
 
+
 //    RUTAS DE ROL
     Route::get('roles', 'BackEnd\RolesController@index')->name('roles');
     Route::post('crearRol', 'BackEnd\RolesController@store')->name('crearRol');
@@ -132,6 +133,9 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 //   RUTAS PRODUCTO
     Route::get('producto', 'BackEnd\RegistroProductoController@index')->name('producto');
 
+
+//RUTAS CATEGORIAS
+    Route::get('categoria', 'BackEnd\CategoriaController@index')->name('categoria');
 
     Route::get('tipoDocumentos', 'BackEnd\TipoDocumentoController@index')->name('tipoDocumentos');
 
