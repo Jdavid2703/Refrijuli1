@@ -20,6 +20,7 @@ class CreatePedidosTable extends Migration
             $table->string('direccion_entrega');
             $table->time('hora_entrega');
             $table->integer('total_monto');
+            $table->rememberToken();
 
         });
     }

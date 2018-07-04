@@ -28,8 +28,7 @@ class AlterInsumosTable extends Migration
             $table->foreign('id_unidad')
                 ->references('id')
                 ->on('unidades');
-            //termina
-            $table->rememberToken();
+
         });
     }
 

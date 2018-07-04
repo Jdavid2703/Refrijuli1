@@ -28,8 +28,7 @@ class AddAlterPedidosTable extends Migration
             $table->foreign('id_producto')
                 ->references('id')
                 ->on('productos');
-            //termina
-            $table->rememberToken();
+
         });
     }
 
