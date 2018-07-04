@@ -133,13 +133,15 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 //   RUTAS PRODUCTO
     Route::get('producto', 'BackEnd\RegistroProductoController@index')->name('producto');
 
-
 //RUTAS CATEGORIAS
     Route::get('categoria', 'BackEnd\CategoriaController@index')->name('categoria');
+
 
     Route::get('tipoDocumentos', 'BackEnd\TipoDocumentoController@index')->name('tipoDocumentos');
 
     Route::get('cerrarSesion', 'Auth\LoginController@cerrarSesion')->name('cerrarSesion');
+
+
 });
 //RUTAS ESTADO
 Route::get('estado', 'BackEnd\EstadoController@index')->name('estado');

@@ -23,7 +23,7 @@ if (!$enlace) {
 
         <div class="col-md-8 ">
             <div align="center">
-                <h1><b>UNIDAD</b></h1>
+                <h1><b>UNIDADES</b></h1>
 
 
                 <form action="">

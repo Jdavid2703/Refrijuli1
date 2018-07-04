@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\BackEnd;
 
+use App\Models\Unidad;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -34,7 +35,7 @@ class CategoriaController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
@@ -45,16 +46,10 @@ class CategoriaController extends Controller
      */
     public function edit($id)
     {
-        //
+
     }
 
-    /**
-     * Update the specified resource in storage.#categori{color: white;}#categori:hover{color: orange}
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function update(Request $request, $id)
     {
         //
