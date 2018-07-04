@@ -27,7 +27,7 @@
                 <a href=""></a>
             </li>
         </ul>
-        <h4><b><a id="registrar1" href="{{route('registro')}}">Registrar</a></b></h4>&nbsp;&nbsp;&nbsp;
+
         <!-- Boton Modal -->
         <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#loginModal">
             Iniciar Sesión
