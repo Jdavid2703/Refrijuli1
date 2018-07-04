@@ -15,6 +15,8 @@ class CreatePresentacionesTable extends Migration
     {
         Schema::create('presentaciones', function (Blueprint $table) {
             $table->increments('id');
+            $table->text('descripcion');
+            $table->rememberToken();
             $table->timestamps();
         });
     }
