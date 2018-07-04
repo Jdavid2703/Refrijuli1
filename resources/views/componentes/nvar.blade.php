@@ -1,3 +1,9 @@
+<br><br><br>
+<div align="center">
+    <img src="img/logo.png" width="260" height="180">
+
+</div>
+
 <nav class="navbar navbar-expand-sm bg-info navbar-info fixed-top">
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 

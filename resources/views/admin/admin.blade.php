@@ -1,6 +1,11 @@
 @extends('admin.layaut.loyaut')
+<br><br><br>
+<div align="center">
+    <img src="img/logo.png" width="260" height="180">
 
-//MENÚ DE NAVEGACIÓN
+</div>
+
+{{--MENÚ DE NAVEGACIÓN--}}
 <nav class="navbar navbar-expand-sm bg-info navbar-info fixed-top">
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
@@ -21,7 +26,7 @@
             </li>
         </ul>
 
-        //MODAL CERRAR SESIÓN
+        {{--MODAL CERRAR SESIÓN--}}
         <li class="nav-item">
             <a class="nav-item" data-toggle="modal" data-target="#exampleModal1"><b>Cerrar sesión</b></a>
         </li>
@@ -34,9 +39,8 @@
 
 <br><br><br><br>
 
-//TEXTO DE BIENVENIDA
-<h1><b>Bienvenido</b></h1>
-<br>
+{{--TEXTO DE BIENVENIDA--}}
+
 <h4>
     <p>
         Usted está en modo <b>Administrador</b>; puede agregar,editar y eliminar todas las opciones.
@@ -44,7 +48,7 @@
 
 </h4>
 
-// LOGOOUT MODAL
+ {{--LOGOOUT MODAL--}}
 <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
