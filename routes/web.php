@@ -75,7 +75,7 @@
 //    $usuario->apellido ='Gonzalez';
 //    $usuario->correo = 'gonzy@hotmail.com';
 //    $usuario->numero = '74859632';
-//    $usuario->usuario = 'gonzy';
+//    $usuario->usuario = 'cata';
 //    $usuario->password = bcrypt('123');
 //    $usuario->tipo_documentos_id = '2';
 //    $usuario->save();
@@ -88,9 +88,9 @@
 //    $usuario->apellido ='Lopez';
 //    $usuario->correo = 'mate33@hotmail.com';
 //    $usuario->numero = '98765';
-//    $usuario->usuario = 'hjhj';
+//    $usuario->usuario = 'mateo';
 //    $usuario->password = bcrypt('123');
-//    $usuario->tipo_documentos_id = '2';
+//    $usuario->tipo_documentos_id = '1';
 //    $usuario->save();
 //    return $usuario;
 //});
