@@ -2,18 +2,19 @@
 
 namespace App\Models;
 
+use App\Pedido;
 use Illuminate\Database\Eloquent\Model;
 
 class Producto extends Model
 {
     protected $fillable = [
-        'nombre','descripcion',
+        'nombre','descripcion','precio','estado',
     ];
 
     protected $hidden = [
-        'tipo_unidad','cantidad',
+        'remember_token',
     ];
-    public function insumo(){
-        return $this->hasMany(Insumo::Class);
+    public function pedidos(){
+        return $this->hasMany(Pedido::Class);
     }
 }
