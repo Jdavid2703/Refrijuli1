@@ -23,6 +23,11 @@ class AddAlterPedidosTable extends Migration
             $table->foreign('id_estado')
                 ->references('id')
                 ->on('estados');
+
+            $table->unsignedInteger('id_producto');
+            $table->foreign('id_producto')
+                ->references('id')
+                ->on('productos');
             //termina
             $table->rememberToken();
         });
