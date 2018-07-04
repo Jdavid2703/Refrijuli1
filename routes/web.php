@@ -24,13 +24,13 @@
 //    return $usuario;
 //});
 
-//route::get('test',function (){
-//    $usuario = new App\models\TipoDocumento();
-//    $usuario->nombre ='TI';
-//    $usuario->descripcion ='Tarjeta de Identidad';
-//    $usuario->save();
-//    return $usuario;
-//});
+/*route::get('test',function (){
+    $usuario = new App\models\TipoDocumento();
+    $usuario->nombre ='TI';
+    $usuario->descripcion ='Tarjeta de Identidad';
+    $usuario->save();
+    return $usuario;
+});*/
 
 //route::get('test',function (){
 //    $usuario = new App\models\TipoDocumento();
@@ -52,21 +52,21 @@
 /////////// ********************      ROLES      ***********************************
 
 
-//route::get('test',function (){
-//    $usuario = new App\models\Rol();
-//    $usuario->rol ='Admin';
-//    $usuario->descripcion ='Administrador';
-//    $usuario->save();
-//    return $usuario;
-//});
+/*route::get('test',function (){
+    $usuario = new App\models\Rol();
+    $usuario->rol ='Admin';
+    $usuario->descripcion ='Administrador';
+    $usuario->save();
+    return $usuario;
+});*/
 
-//route::get('test',function (){
-//    $usuario = new App\models\Rol();
-//    $usuario->rol ='Usuario';
-//    $usuario->descripcion ='Usuario';
-//    $usuario->save();
-//    return $usuario;
-//});
+/*route::get('test',function (){
+    $usuario = new App\models\Rol();
+    $usuario->rol ='Usuario';
+    $usuario->descripcion ='Usuario';
+    $usuario->save();
+    return $usuario;
+});*/
 
 
 //route::get('test',function (){
