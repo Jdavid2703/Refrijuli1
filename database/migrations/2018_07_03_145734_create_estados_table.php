@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePresentacionesTable extends Migration
+class CreateEstadosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,21 +13,20 @@ class CreatePresentacionesTable extends Migration
      */
     public function up()
     {
-        Schema::create('presentaciones', function (Blueprint $table) {
+        Schema::create('estados', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('descripcion');
+            $table->string('nombre');
+            $table->string('descripcion');
             $table->rememberToken();
-            $table->timestamps();
         });
     }
 
     /**
-     * Reverse the migrations.
-     *
-     * @return void
+  PP
      */
     public function down()
     {
-        Schema::dropIfExists('presentaciones');
+        Schema::dropIfExists('estados');
     }
 }
+

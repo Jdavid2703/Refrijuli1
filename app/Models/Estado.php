@@ -2,19 +2,20 @@
 
 namespace App\Models;
 
+use App\Pedido;
 use Illuminate\Database\Eloquent\Model;
 
-class Rol extends Model
+class Estado extends Model
 {
     protected $fillable = [
-        'rol','descripcion',
+        'nombre','descripcion',
     ];
 
-
+//PP
     protected $hidden = [
         'remember_token',
     ];
-    public function x(){
-        return $this->hasMany(Usuario::Class);
+    public function pedidos(){
+        return $this->hasMany(Pedido::Class);
     }
 }

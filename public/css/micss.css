@@ -1,4 +1,13 @@
-#home1{color: white;}#home1:hover{color: orange}
-#contactos1{color: white;}#contactos1:hover{color: orange}
-#informacion1{color: white;}#informacion1:hover{color: orange}
-#registrar1{color: white;}#registrar1:hover{color: orange}
+/*MENÚ DE NAVEGACIÓN ADMIN*/
+
+#users{color: white;}#users:hover{color: orange}
+#roless{color: white;}#roless:hover{color: orange}
+#tipD{color: white;}#tipD:hover{color: orange}
+#categori{color: white;}#categori:hover{color: orange}
+
+/*MENÚ DE NAVEGACIÓN INICIO*/
+#home1{color: white;}#home1:hover{color:orange}
+#informacion1{color: white;}#informacion1:hover{color:orange}
+#contactos1{color: white;}#contactos1:hover{color:orange}
+#registrar1{color: white;}#registrar1:hover{color:orange}
+

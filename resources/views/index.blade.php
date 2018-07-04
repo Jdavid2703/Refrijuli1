@@ -1,5 +1,6 @@
 @extends('layaut.loyaut')
+
 @section('content')
-    @include('componentes.login')
-@endsection
+    @include('componentes.contenido')
+    @endsection
 

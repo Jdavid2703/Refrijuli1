@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+@extends('usuario.layaut.loyaut')
 
 <nav class="navbar navbar-expand-sm bg-info navbar-info fixed-top">
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -9,8 +9,12 @@
                 <h1><b>Bienvenido</b></h1>
             </li>
 
-
         </ul>
+
+        {{--MODAL CERRAR SESIÓN--}}
+        <li class="nav-item">
+            <a class="nav-item" data-toggle="modal" data-target="#exampleModal2"><b>Cerrar sesión</b></a>
+        </li>
 
 
     </div>
@@ -26,3 +30,24 @@
     </p>
 
 </h4>
+
+{{--LOGOOUT MODAL--}}
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">¿Está seguro?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Al presionar cerrar sesión, se cerrará su cuenta</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                <a class="btn btn-primary" href="#">Cerrar sesión</a>
+            </div>
+        </div>
+    </div>
+</div>
+

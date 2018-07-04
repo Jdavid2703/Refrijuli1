@@ -75,7 +75,7 @@
 //    $usuario->apellido ='Gonzalez';
 //    $usuario->correo = 'gonzy@hotmail.com';
 //    $usuario->numero = '74859632';
-//    $usuario->usuario = 'gonzy';
+//    $usuario->usuario = 'cata';
 //    $usuario->password = bcrypt('123');
 //    $usuario->tipo_documentos_id = '2';
 //    $usuario->save();
@@ -88,9 +88,9 @@
 //    $usuario->apellido ='Lopez';
 //    $usuario->correo = 'mate33@hotmail.com';
 //    $usuario->numero = '98765';
-//    $usuario->usuario = 'hjhj';
+//    $usuario->usuario = 'mateo';
 //    $usuario->password = bcrypt('123');
-//    $usuario->tipo_documentos_id = '2';
+//    $usuario->tipo_documentos_id = '1';
 //    $usuario->save();
 //    return $usuario;
 //});
@@ -100,35 +100,42 @@ Route::get('/', 'VistasController\VistaController@index')->name('/');
 Route::get('informacion', 'VistasController\VistaController@informacion')->name('informacion');
 Route::get('contactos', ['as' => 'contactos', 'uses' => 'VistasController\VistaController@contactos']);
 
-Route::post('crearUsu', 'BackEnd\RegistroUsuController@store')->name('crearUsu');
 
 Route::get('registro', 'BackEnd\RegistroUsuController@index')->name('registro');
-Route::post('crearRol', 'BackEnd\RolesController@store')->name('crearRol');
+
 
 
 Route::post('login', 'Auth\LoginController@login')->name('login');
 
+
 Route::group(['middleware' => ['auth', 'admin']], function () {
 
-    Route::get('admin', 'BackEnd\AdminController@index')->name('admin');
-    Route::get('roles', 'BackEnd\RolesController@index')->name('roles');
-    Route::get('crearRol', 'BackEnd\RolesController@create')->name('crearRol');
 
-    Route::post('guardarRol', 'BackEnd\RolesController@store')->name('guardarRol');
+    Route::get('admin', 'BackEnd\AdminController@index')->name('admin');
+
+//    RUTAS DE ROL
+    Route::get('roles', 'BackEnd\RolesController@index')->name('roles');
+    Route::post('crearRol', 'BackEnd\RolesController@store')->name('crearRol');
     Route::get('crearRol', 'BackEnd\RolesController@create')->name('crearRol');
+    Route::post('guardarRol', 'BackEnd\RolesController@store')->name('guardarRol');
     Route::get('edirol/{id}', 'BackEnd\RolesController@show')->name('edirol');
     Route::post('update/{id}', 'BackEnd\RolesController@update')->name('update');
     Route::get('eliminar/{id}', 'BackEnd\RolesController@destroy')->name('eliminar');
+
+
+//    RUTAS USUARIOS
     Route::get('usuarios', 'BackEnd\UsuariosRegistradosController@index')->name('usuarios');
+    Route::get('registro', 'BackEnd\RegistroUsuController@index')->name('registro');
+    Route::post('guardarUsuario', 'BackEnd\RegistroUsuController@store')->name('guardarUsuario');
+    Route::get('ediUsuario/{id}', 'BackEnd\RegistroUsuController@show')->name('ediUsuario');
+
+
     Route::get('tipoDocumentos', 'BackEnd\TipoDocumentoController@index')->name('tipoDocumentos');
+
+    Route::get('cerrarSesion', 'Auth\LoginController@cerrarSesion')->name('cerrarSesion');
 });
 
 
-
-Route::group(['middleware' => ['auth', 'usuario']], function () {
-    Route::get('usuario', 'BackEnd\UsuarioController@index')->name('usuario');
-
-});
 
 
 

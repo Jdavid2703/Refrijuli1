@@ -2,19 +2,19 @@
 
 namespace App\Models;
 
+use App\Pedido;
 use Illuminate\Database\Eloquent\Model;
 
-class Rol extends Model
+class Producto extends Model
 {
     protected $fillable = [
-        'rol','descripcion',
+        'nombre','descripcion','precio','estado',
     ];
-
 
     protected $hidden = [
         'remember_token',
     ];
-    public function x(){
-        return $this->hasMany(Usuario::Class);
+    public function pedidos(){
+        return $this->hasMany(Pedido::Class);
     }
 }

@@ -20,16 +20,8 @@ class CreatePedidosTable extends Migration
             $table->string('direccion_entrega');
             $table->time('hora_entrega');
             $table->integer('total_monto');
-            //foranea
-            $table->unsignedInteger('id_usuario');
-            $table->foreign('id_usuario')
-                ->references('id')
-                ->on('usuarios');
-            //termina
-            $table->unsignedInteger('id_estado');
-            $table->foreign('id_estado')
-                ->references('id')
-                ->on('estados');
+            $table->rememberToken();
+
         });
     }
 

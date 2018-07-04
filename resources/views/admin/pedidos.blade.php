@@ -15,15 +15,52 @@ if (!$enlace) {
 
 <div class="container-fluid ">
 
-    <div class="row">
-        <div class="col-md-2">
+    <div class="row ">
+        <div class="col-md-2  ">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <table class="table">
 
+                <thead class="thead-dark">
+                <tr align="center">
+                    <h3 align="center"><b>ROLES</b></h3>
+                </tr>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">DESCRIPCIÓN</th>
+
+                </tr>
+                </thead>
+
+
+                <tbody>
+
+                <?php
+
+                $sql = "SELECT id,descripcion FROM rols ";
+                $result = mysqli_query($enlace, $sql);
+
+
+                while ($mostrar = mysqli_fetch_array($result)){
+                ?>
+                <tr>
+
+                    <td><?php echo $mostrar['id']?></td>
+                    <td><?php echo $mostrar['descripcion']?></td>
+
+
+
+                </tr>
+                <?php
+                }
+                ?>
+                </tbody>
+            </table>
         </div>
 
 
         <div class="col-md-8 ">
             <div align="center">
-                <h1><b>USUARIOS</b></h1>
+                <h1><b>USUARIOS</b> </h1>
 
 
                 <form action="{{route('registro')}}">
@@ -64,7 +101,7 @@ if (!$enlace) {
                 <tr>
 
                     <td><?php echo $mostrar['id']?></td>
-                    <td><?php echo $mostrar['nombre']?></td>
+                    <td ><?php echo $mostrar['nombre']?></td>
                     <td><?php echo $mostrar['apellido']?></td>
                     <td><?php echo $mostrar['numero']?></td>
                     <td><?php echo $mostrar['correo']?></td>
@@ -76,10 +113,13 @@ if (!$enlace) {
                         <a class="btn btn-primary" href="#">Editar</a>
 
 
+
                 </tr>
                 <?php
                 }
                 ?>
+
+
 
 
                 </tbody>
@@ -93,10 +133,6 @@ if (!$enlace) {
 
 
         </div>
+
     </div>
 </div>
-
-
-
-
-
