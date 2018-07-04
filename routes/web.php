@@ -16,13 +16,13 @@
 //======================================================================
 
 
-//route::get('test',function (){
-//    $usuario = new App\models\TipoDocumento();
-//    $usuario->nombre ='CC';
-//    $usuario->descripcion ='Cedula de Ciudadania';
-//    $usuario->save();
-//    return $usuario;
-//});
+/*route::get('test',function (){
+   $usuario = new App\models\TipoDocumento();
+    $usuario->nombre ='CC';
+    $usuario->descripcion ='Cedula de Ciudadania';
+    $usuario->save();
+   return $usuario;
+});*/
 
 /*route::get('test',function (){
     $usuario = new App\models\TipoDocumento();
@@ -32,21 +32,21 @@
     return $usuario;
 });*/
 
-//route::get('test',function (){
-//    $usuario = new App\models\TipoDocumento();
-//    $usuario->nombre ='CE';
-//    $usuario->descripcion ='Cedula de extrajeria';
-//    $usuario->save();
-//    return $usuario;
-//});
+/*route::get('test',function (){
+    $usuario = new App\models\TipoDocumento();
+   $usuario->nombre ='CE';
+    $usuario->descripcion ='Cedula de extrajeria';
+    $usuario->save();
+    return $usuario;
+});*/
 
-//route::get('test',function (){
-//    $usuario = new App\models\TipoDocumento();
-//    $usuario->nombre ='PP';
-//    $usuario->descripcion ='Pasaporte';
-//    $usuario->save();
-//    return $usuario;
-//});
+/*route::get('test',function (){
+    $usuario = new App\models\TipoDocumento();
+    $usuario->nombre ='PP';
+    $usuario->descripcion ='Pasaporte';
+    $usuario->save();
+  return $usuario;
+});*/
 
 
 /////////// ********************      ROLES      ***********************************
@@ -55,45 +55,45 @@
 /*route::get('test',function (){
     $usuario = new App\models\Rol();
     $usuario->rol ='Admin';
-    $usuario->descripcion ='Administrador';
+   $usuario->descripcion ='Administrador';
     $usuario->save();
-    return $usuario;
+   return $usuario;
 });*/
 
 /*route::get('test',function (){
     $usuario = new App\models\Rol();
     $usuario->rol ='Usuario';
-    $usuario->descripcion ='Usuario';
-    $usuario->save();
+   $usuario->descripcion ='Usuario';
+   $usuario->save();
     return $usuario;
 });*/
 
 
-//route::get('test',function (){
-//    $usuario = new App\Models\Usuario;
-//    $usuario->nombre ='Catalina';
-//    $usuario->apellido ='Gonzalez';
-//    $usuario->correo = 'gonzy@hotmail.com';
-//    $usuario->numero = '74859632';
-//    $usuario->usuario = 'cata';
-//    $usuario->password = bcrypt('123');
-//    $usuario->tipo_documentos_id = '2';
-//    $usuario->save();
-//    return $usuario;
-//});
+/*route::get('test',function (){
+    $usuario = new App\Models\Usuario;
+    $usuario->nombre ='Catalina';
+    $usuario->apellido ='Gonzalez';
+   $usuario->correo = 'gonzy@hotmail.com';
+    $usuario->numero = '74859632';
+    $usuario->usuario = 'cata';
+    $usuario->password = bcrypt('123');
+    $usuario->tipo_documentos_id = '2';
+    $usuario->save();
+    return $usuario;
+});*/
 
-//route::get('test',function (){
-//    $usuario = new App\Models\Usuario;
-//    $usuario->nombre ='Mateo';
-//    $usuario->apellido ='Lopez';
-//    $usuario->correo = 'mate33@hotmail.com';
-//    $usuario->numero = '98765';
-//    $usuario->usuario = 'mateo';
-//    $usuario->password = bcrypt('123');
-//    $usuario->tipo_documentos_id = '1';
-//    $usuario->save();
-//    return $usuario;
-//});
+/*route::get('test',function (){
+    $usuario = new App\Models\Usuario;
+    $usuario->nombre ='Mateo';
+    $usuario->apellido ='Lopez';
+    $usuario->correo = 'mate33@hotmail.com';
+    $usuario->numero = '98765';
+    $usuario->usuario = 'mateo';
+  $usuario->password = bcrypt('123');
+    $usuario->tipo_documentos_id = '1';
+    $usuario->save();
+    return $usuario;
+});*/
 
 
 Route::get('/', 'VistasController\VistaController@index')->name('/');
