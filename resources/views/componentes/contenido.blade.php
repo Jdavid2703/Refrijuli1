@@ -8,7 +8,7 @@
             <br>
             <br>
             <br>
-            <h3>¿Que esperas para registrarte en <b>Refrijuli</b>?</h3>
+            <h3>¿Que esperas para pedir en <b>Refrijuli</b>?</h3>
 
         </div>
 
