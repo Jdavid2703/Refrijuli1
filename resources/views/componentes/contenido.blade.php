@@ -1,5 +1,4 @@
-<br><br>
-
+<br><br><br>
 {{--IMAGENES DE COMIDAS--}}
 <div class="container-fluid">
     <div class="row">
