@@ -2,6 +2,7 @@
 
 <form action="{{route('guardarUsuario')}}" method="post">
     {{csrf_field()}}
+    <div class="container-fluid"></div>
     <div class="form-group">
         <label for="nombre"><b>Nombre</b></label>
         <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="txtNombre">
@@ -52,7 +53,7 @@
 </div>
 
 </div>
-</div>
+
 
 
 

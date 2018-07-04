@@ -107,6 +107,7 @@ Route::get('registro', 'BackEnd\RegistroUsuController@index')->name('registro');
 
 Route::post('login', 'Auth\LoginController@login')->name('login');
 
+
 Route::group(['middleware' => ['auth', 'admin']], function () {
 
 
@@ -130,14 +131,11 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 
 
     Route::get('tipoDocumentos', 'BackEnd\TipoDocumentoController@index')->name('tipoDocumentos');
+
+    Route::get('cerrarSesion', 'Auth\LoginController@cerrarSesion')->name('cerrarSesion');
 });
 
 
-
-Route::group(['middleware' => ['auth', 'usuario']], function () {
-    Route::get('usuario', 'BackEnd\UsuarioController@index')->name('usuario');
-
-});
 
 
 

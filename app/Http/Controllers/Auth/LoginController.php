@@ -35,4 +35,10 @@ class LoginController extends Controller
             }
         }
     }
+
+    public function cerrarSesion(){
+
+        Auth::logout();
+        return redirect()->route('/');
+    }
 }

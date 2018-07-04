@@ -88,7 +88,7 @@
             <div class="modal-body">Al presionar cerrar sesión, se cerrará su cuenta</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                <a class="btn btn-primary" href="#">Cerrar sesión</a>
+                <a class="btn btn-primary" href="{{route('cerrarSesion')}}">Cerrar sesión</a>
             </div>
         </div>
     </div>
