@@ -19,5 +19,13 @@ class Insumo extends Model
     {
         return $this->belongsTo(Categoria::Class);
     }
+    public function presentaciones()
+    {
+        return $this->belongsTo(Presentacion::Class);
+    }
+    public function unidades()
+    {
+        return $this->belongsTo(Unidad::Class);
+    }
 
 }
