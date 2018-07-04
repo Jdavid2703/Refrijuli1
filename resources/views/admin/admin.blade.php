@@ -43,7 +43,7 @@
             </li>
 
             <li class="nav-item">
-                <h4><b><a id="categori" class="nav-link" href="#">Unidades</a></b>
+                <h4><b><a id="categori" class="nav-link" href="{{route('unidad')}}">Unidades</a></b>
                 </h4>
             </li>
 
