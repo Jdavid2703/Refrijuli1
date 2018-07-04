@@ -23,7 +23,7 @@
             {{--</li>--}}
 
             <li class="nav-item">
-                <h4><b><a id="categori" class="nav-link" href="#">Categorias</a></b>
+                <h4><b><a id="categori" class="nav-link" href="{{route('pedidos')}}">Categorias</a></b>
                 </h4>
             </li>
 
