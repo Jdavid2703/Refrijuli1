@@ -151,7 +151,7 @@
     </div>
     <div class="text-center">
         <br><br>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" class="btn btn-primary">Enviar</button> &ensp;
         <button type="reset" class="btn btn-primary">Cancelar</button>
     </div>
 </form>
