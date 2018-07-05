@@ -136,6 +136,13 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 //   RUTAS PRODUCTO
     Route::get('producto', 'BackEnd\RegistroProductoController@index')->name('producto');
 
+//RUTAS ESTADO
+    Route::get('estado', 'BackEnd\EstadoController@index')->name('estado');
+//RUTAS UNIDAD
+    Route::get('unidad', 'BackEnd\UnidadController@index')->name('unidad');
+//RUTAS INSUMO
+    Route::get('insumo', 'BackEnd\InsumoController@index')->name('insumo');
+
 
 //  RUTAS CATEGORIAS
     Route::get('categoria', 'BackEnd\CategoriaController@index')->name('categoria');
@@ -144,11 +151,6 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 
     Route::get('cerrarSesion', 'Auth\LoginController@cerrarSesion')->name('cerrarSesion');
 });
-//RUTAS ESTADO
-Route::get('estado', 'BackEnd\EstadoController@index')->name('estado');
-//RUTAS UNIDAD
-Route::get('unidad', 'BackEnd\UnidadController@index')->name('unidad');
-//RUTAS INSUMO
-Route::get('insumo', 'BackEnd\InsumoController@index')->name('insumo');
+
 
 
