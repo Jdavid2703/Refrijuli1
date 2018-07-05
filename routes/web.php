@@ -135,12 +135,12 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::get('buscar', 'BackEnd\UsuariosRegistradosController@Buscar')->name('buscar');
 
 //   RUTAS PRODUCTO
-    Route::get('producto', 'BackEnd\ProductosRegistradosController@index')->name('producto');
-    Route::get('crearProducto', 'BackEnd\RegistroProductoController@index')->name('crearProducto');
-    Route::post('guardarProducto', 'BackEnd\RegistroProductoController@store')->name('guardarProducto');
-    Route::get('editarProducto/{id}', 'BackEnd\ProductosRegistradosController@show')->name('editarProducto');
-    Route::post('updateProducto/{id}', 'BackEnd\ProductosRegistradosController@update')->name('updateProducto');
-    Route::get('eliminarProducto/{id}', 'BackEnd\ProductosRegistradosController@destroy')->name('eliminarProducto');
+    Route::get('producto', 'BackEnd\ProductoController@index')->name('producto');
+    Route::get('crearProducto', 'BackEnd\ProductoController@create')->name('crearProducto');
+    Route::post('guardarProducto', 'BackEnd\ProductoController@store')->name('guardarProducto');
+    Route::get('editarProducto/{id}', 'BackEnd\ProductoController@show')->name('editarProducto');
+    Route::post('updateProducto/{id}', 'BackEnd\ProductoController@update')->name('updateProducto');
+    Route::get('eliminarPoducto/{id}', 'BackEnd\ProductoController@destroy')->name('eliminarPoducto');
 
 //RUTAS ESTADO
     Route::get('estado', 'BackEnd\EstadoController@index')->name('estado');

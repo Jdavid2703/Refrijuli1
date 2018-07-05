@@ -6,38 +6,47 @@ use App\Models\Producto;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class ProductosRegistradosController extends Controller
+class ProductoController extends Controller
 {
-
     public function index()
     {
-        $producto = \App\Models\Usuario::all();
+        $producto = \App\Models\Producto::all();
         return view('admin.producto',compact('producto'));
     }
 
 
     public function create()
     {
-        //
+        return view('admin.crearProducto');
     }
 
 
     public function store(Request $request)
     {
-        //
+        $credenciales = $this->validate($request,[
+            'nombre'=>'required',
+            'descripcion'=>'required',
+            'precio'=>'required|numeric',
+
+        ]);
+        $producto = new Producto();
+        $producto->nombre = $request->input('nombre');
+        $producto->descripcion = $request->input('descripcion');
+        $producto->precio = $request->input('precio');
+        $producto->save();
+        return redirect()->route('producto');
     }
 
 
     public function show($id)
     {
-        $productoid= Producto::find($id);
+        $productoid = Producto::find($id);
         return view('admin.editarProducto',compact('productoid'));
     }
 
-
     public function edit($id)
     {
-        //
+
     }
 
 
@@ -46,20 +55,16 @@ class ProductosRegistradosController extends Controller
         $credenciales = $this->validate($request,[
             'nombre'=>'required',
             'descripcion'=>'required',
-            'precio'=>'required',
-
-
-
+            'precio'=>'required|numeric',
 
         ]);
         $producto = Producto::find($id);
-        $producto ->nombre = $request->input('nombre');
-        $producto ->descripcion = $request->input('descripcion');
-        $producto ->precio = $request->input('precio');
-        $producto ->save();
+        $producto->nombre = $request->input('nombre');
+        $producto->descripcion = $request->input('descripcion');
+        $producto->precio = $request->input('precio');
+        $producto->save();
         return redirect()->route('producto');
     }
-
 
     public function destroy($id)
     {
