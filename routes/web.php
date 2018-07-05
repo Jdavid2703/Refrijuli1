@@ -181,8 +181,14 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::get('pedidos', 'BackEnd\PedidoController@index')->name('pedidos');
     Route::get('registroPedido', 'BackEnd\RegistroPedidoController@index')->name('registroPedido');
     Route::post('guardarPedido', 'BackEnd\RegistroPedidoController@store')->name('guardarPedido');
+    Route::get('editarPedido/{id}', 'BackEnd\RegistroPedidoController@show')->name('editarPedido');
+    Route::post('updatePedido/{id}', 'BackEnd\RegistroPedidoController@update')->name('updatePedido');
+    Route::get('eliminarPedido/{id}', 'BackEnd\RegistroPedidoController@destroy')->name('eliminarPedido');
 
-    Route::get('pedido', 'BackEnd\PedidosVerUsuarioController@index')->name('pedido');
+
+
+
+
 
     Route::get('tipoDocumentos', 'BackEnd\TipoDocumentoController@index')->name('tipoDocumentos');
 
