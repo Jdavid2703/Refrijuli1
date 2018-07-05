@@ -145,6 +145,12 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 
 //  RUTAS CATEGORIAS
     Route::get('categoria', 'BackEnd\CategoriaController@index')->name('categoria');
+    Route::get('crearCategoria', 'BackEnd\CategoriaController@create')->name('crearCategoria');
+    Route::post('guardarCategoria', 'BackEnd\CategoriaController@store')->name('guardarCategoria');
+    Route::get('editarCategoria/{id}', 'BackEnd\CategoriaController@show')->name('editarCategoria');
+    Route::post('update/{id}', 'BackEnd\CategoriaController@update')->name('update');
+    Route::get('eliminar/{id}', 'BackEnd\CategoriaController@destroy')->name('eliminar');
+
 
     Route::get('tipoDocumentos', 'BackEnd\TipoDocumentoController@index')->name('tipoDocumentos');
 

@@ -24,7 +24,7 @@ if (!$enlace) {
 
                 <h1><b>CATEGORIAS</b></h1>
 
-                <form action="">
+                <form action="{{route('crearCategoria')}}">
 
                     <input class="btn btn-primary" type="submit" value="Nuevo">
                 </form>
