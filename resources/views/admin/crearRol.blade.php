@@ -5,6 +5,7 @@
 </div>
 <form action="{{route('guardarRol')}}" method="post">
     {{csrf_field()}}
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
