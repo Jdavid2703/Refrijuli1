@@ -28,15 +28,6 @@
 
                 </fieldset>
 
-                <fieldset class="form-group">
-                    <label for="exampleSelect1"><b>Estado</b></label>
-                    <select class="form-control" id="exampleSelect1" name="estado">
-                        <option value="" selected disabled hidden>Seleccionar</option>
-                        @foreach($select as $item)
-                            <option value="{{$item->id}}">{{$item->descripcion}}</option>
-                        @endforeach
-                    </select>
-                </fieldset>
 
                 <div>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
