@@ -5,7 +5,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 text-center">
+                <br><br>
                 <h1>AGREGAR PEDIDO</h1>
+                <br><br>
 
             </div>
         </div>
@@ -15,6 +17,7 @@
             </div>
             <div class="col-md-6 ">
                 <div class="row ">
+
                     <div class="col-md-1">
 
                     </div>
@@ -147,6 +150,7 @@
         </div>
     </div>
     <div class="text-center">
+        <br><br>
         <button type="submit" class="btn btn-primary">Enviar</button>
         <button type="reset" class="btn btn-primary">Cancelar</button>
     </div>
