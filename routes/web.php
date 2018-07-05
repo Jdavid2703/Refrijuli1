@@ -140,7 +140,7 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::post('guardarProducto', 'BackEnd\ProductoController@store')->name('guardarProducto');
     Route::get('editarProducto/{id}', 'BackEnd\ProductoController@show')->name('editarProducto');
     Route::post('updateProducto/{id}', 'BackEnd\ProductoController@update')->name('updateProducto');
-    Route::get('eliminarPoducto/{id}', 'BackEnd\ProductoController@destroy')->name('eliminarPoducto');
+    Route::get('eliminarProducto/{id}', 'BackEnd\ProductoController@destroy')->name('eliminarProducto');
 
 //RUTAS ESTADO
     Route::get('estado', 'BackEnd\EstadoController@index')->name('estado');
