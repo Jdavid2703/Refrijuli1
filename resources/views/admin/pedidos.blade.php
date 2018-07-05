@@ -23,7 +23,7 @@ if (!$enlace) {
 
         <div class="col-md-10 ">
             <div align="center">
-                <h1><b>PEDIDOS</b> </h1>
+                <h1><b>PEDIDOS</b></h1>
 
 
                 <form action="{{route('registroPedido')}}">
@@ -35,7 +35,8 @@ if (!$enlace) {
             <br>
             {{--FUNCIÓN BUSCAR--}}
             <form action="{{route('pedidos')}}" class="form-inline">
-                <input type="text" name="usuario" class="form-control mr-sm-2" placeholder="Buscar aquí..." aria-label="Search" required>
+                <input type="text" name="usuario" class="form-control mr-sm-2" placeholder="Buscar aquí..."
+                       aria-label="Search" required>
                 <input type="submit" value="Buscar" class="btn btn-outline-primary">
             </form>
             <table class="table">
@@ -70,7 +71,7 @@ if (!$enlace) {
                 <tr>
 
                     <td><?php echo $mostrar['id']?></td>
-                    <td ><?php echo $mostrar['fecha_entrega']?></td>
+                    <td><?php echo $mostrar['fecha_entrega']?></td>
                     <td><?php echo $mostrar['fecha_pedido']?></td>
                     <td><?php echo $mostrar['direccion_entrega']?></td>
                     <td><?php echo $mostrar['hora_entrega']?></td>
@@ -84,13 +85,10 @@ if (!$enlace) {
                         <a class="btn btn-primary" href="#">Editar</a>
 
 
-
                 </tr>
                 <?php
                 }
                 ?>
-
-
 
 
                 </tbody>
