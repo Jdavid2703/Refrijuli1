@@ -19,24 +19,12 @@ class AlterInsumosTable extends Migration
                 ->references('id')
                 ->on('categorias');
 
-            $table->unsignedInteger('id_presentacion');
-            $table->foreign('id_presentacion')
-                ->references('id')
-                ->on('presentaciones');
 
-            $table->unsignedInteger('id_unidad');
-            $table->foreign('id_unidad')
-                ->references('id')
-                ->on('unidades');
 
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+
     public function down()
     {
         Schema::table('insumos', function (Blueprint $table) {
