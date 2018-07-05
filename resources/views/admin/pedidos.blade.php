@@ -16,23 +16,20 @@ if (!$enlace) {
 <div class="container-fluid ">
 
     <div class="row ">
-        <div class="col-md-1  ">
 
-        </div>
-
-
-        <div class="col-md-10 ">
+        <div class="col-md-12 ">
             <div align="center">
+                <br>
                 <h1><b>PEDIDOS</b></h1>
 
 
                 <form action="{{route('registroPedido')}}">
-                    <input class="btn btn-primary" type="submit" value="Registrar Nuevo">
+                    <input class="btn btn-primary" type="submit" value="Nuevo">
                 </form>
 
 
             </div>
-            <br>
+
             {{--FUNCIÓN BUSCAR--}}
             <form action="{{route('pedidos')}}" class="form-inline">
                 <input type="text" name="usuario" class="form-control mr-sm-2" placeholder="Buscar aquí..."
@@ -44,14 +41,14 @@ if (!$enlace) {
                 <thead class="thead-dark">
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">fecha_entrega</th>
-                    <th scope="col">fecha_pedido</th>
-                    <th scope="col">direccion_entrega</th>
-                    <th scope="col">hora_entrega</th>
-                    <th scope="col">total_monto</th>
-                    <th scope="col">id_usuario</th>
-                    <th scope="col">id_estado</th>
-                    <th scope="col">id_producto</th>
+                    <th scope="col">Fecha Entrega</th>
+                    <th scope="col">Fecha Pedido</th>
+                    <th scope="col">Dirección entrega</th>
+                    <th scope="col">Hora entrega</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">id Usuario</th>
+                    <th scope="col">id Estado</th>
+                    <th scope="col">id Producto</th>
 
 
                 </tr>
@@ -98,10 +95,6 @@ if (!$enlace) {
 
         </div>
 
-        <div class="col-md-1  ">
-
-
-        </div>
 
     </div>
 </div>
