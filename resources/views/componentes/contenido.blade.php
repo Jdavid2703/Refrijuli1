@@ -20,8 +20,8 @@
         <div class="col-md-6">
 
             <h4>
-                <ins><b><a id="seguiPedidos" class="nav-link {{request()->is('contactos')?'active':''}}"
-                           href="{{route('contactos')}}">Click aquí para ver seguimiento de pedidos</a></b></ins>
+                <ins><b><a id="seguiPedidos" class="nav-link"
+                           href="{{route('pedidos')}}">Click aquí para ver seguimiento de pedidos</a></b></ins>
             </h4>
             <p>Los pedidos se hacen mediante llamada telefonica, se le otorga un <b>ID de Usuario</b> y puede entrar a la
                 página constantemente

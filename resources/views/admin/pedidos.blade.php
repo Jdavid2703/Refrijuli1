@@ -33,6 +33,11 @@ if (!$enlace) {
 
             </div>
             <br>
+            {{--FUNCIÓN BUSCAR--}}
+            <form action="{{route('pedidos')}}" class="form-inline">
+                <input type="text" name="usuario" class="form-control mr-sm-2" placeholder="Buscar aquí..." aria-label="Search" required>
+                <input type="submit" value="Buscar" class="btn btn-outline-primary">
+            </form>
             <table class="table">
 
                 <thead class="thead-dark">

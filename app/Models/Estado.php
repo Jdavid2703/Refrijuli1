@@ -18,4 +18,8 @@ class Estado extends Model
     public function pedidos(){
         return $this->hasMany(Pedido::Class);
     }
+
+    public function prductos(){
+        return $this->hasMany(Producto::Class);
+    }
 }

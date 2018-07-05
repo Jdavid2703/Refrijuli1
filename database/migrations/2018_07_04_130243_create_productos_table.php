@@ -18,7 +18,6 @@ class CreateProductosTable extends Migration
             $table->string('nombre');
             $table->multiLineString('descripcion');
             $table->integer('precio');
-            $table->string('estado');
             $table->timestamps();
             $table->rememberToken();
         });

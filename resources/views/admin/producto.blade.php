@@ -41,7 +41,6 @@ if (!$enlace) {
                     <th scope="col">NOMBRE</th>
                     <th scope="col">DESCRIPCION</th>
                     <th scope="col">PRECIO</th>
-                    <th scope="col">ESTADO</th>
 
                 </tr>
                 </thead>
@@ -63,7 +62,6 @@ if (!$enlace) {
                     <td><?php echo $mostrar['nombre']?></td>
                     <td><?php echo $mostrar['descripcion']?></td>
                     <td><?php echo $mostrar['precio']?></td>
-                    <td><?php echo $mostrar['estado']?></td>
 
                     <td>
                         <a class="btn btn-primary" href="{{route('eliminarProducto',$mostrar['id'])}}">Eliminar</a>

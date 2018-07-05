@@ -182,6 +182,7 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::get('registroPedido', 'BackEnd\RegistroPedidoController@index')->name('registroPedido');
     Route::post('guardarPedido', 'BackEnd\RegistroPedidoController@store')->name('guardarPedido');
 
+    Route::get('pedido', 'BackEnd\PedidosVerUsuarioController@index')->name('pedido');
 
     Route::get('tipoDocumentos', 'BackEnd\TipoDocumentoController@index')->name('tipoDocumentos');
 

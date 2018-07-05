@@ -22,7 +22,9 @@ class Usuario extends Authenticatable
     }
 
     public function scopeBuscar($query, $usuario){
+
         return $query->Where('usuario','LIKE',"%$usuario%");
+
     }
 
 }

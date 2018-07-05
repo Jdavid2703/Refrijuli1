@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Producto extends Model
 {
     protected $fillable = [
-        'nombre','descripcion','precio','estado',
+        'nombre','descripcion','precio',
     ];
 
     protected $hidden = [
@@ -16,5 +16,8 @@ class Producto extends Model
     ];
     public function pedidos(){
         return $this->hasMany(Pedido::Class);
+    }
+    public function estados(){
+        return $this->belongsTo(Estado::Class);
     }
 }

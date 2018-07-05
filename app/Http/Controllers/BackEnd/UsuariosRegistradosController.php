@@ -12,8 +12,9 @@ class UsuariosRegistradosController extends Controller
     public function index(Request $request)
     {
         $usuario = Usuario::Buscar($request->usuario)->paginate(10);
-        $usuario = \App\Models\Usuario::all();
-        return view('admin.usuarios',compact('usuario'));
+         $usuario = \App\Models\Usuario::all();
+         return view('admin.usuarios',compact('usuario'));
+
     }
 
     public function create()
