@@ -14,7 +14,7 @@
             <div class="col-md-6">
                 <fieldset class="form-group">
                     <label for="usuario"><b>Nombre</b></label>
-                    <input type="text" class="form-control" id="rol" name="rol">
+                    <input type="text" class="form-control" id="rol" name="nombre">
 
                 </fieldset>
                 <fieldset class="form-group">
@@ -24,7 +24,7 @@
                 </fieldset>
                 <fieldset class="form-group">
                     <label for="usuario"><b>Precio</b></label>
-                    <input type="text" class="form-control" id="Descripcion" name="descripcion">
+                    <input type="text" class="form-control" id="Descripcion" name="precio">
 
                 </fieldset>
 
