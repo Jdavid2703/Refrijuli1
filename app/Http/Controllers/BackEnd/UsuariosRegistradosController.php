@@ -30,7 +30,8 @@ class UsuariosRegistradosController extends Controller
             'correo'=>'required',
             'usuario'=>'required',
             'password'=>'required',
-            'tipo_documento_id'=>'required',
+            'rols_id'=>'required',
+
 
 
         ]);
@@ -40,7 +41,8 @@ class UsuariosRegistradosController extends Controller
         $usuario->numero = $request->input('numero');
         $usuario->correo = $request->input('correo');
         $usuario->usuario = $request->input('usuario');
-        $usuario->tipo_documento_id = $request->input('tipo_documento_id');
+        $usuario->password = $request->input('password');
+        $usuario->rols_id = $request->input('rols_id');
         $usuario->save();
         return redirect()->route('usuarios');
     }
@@ -70,17 +72,19 @@ class UsuariosRegistradosController extends Controller
             'correo'=>'required',
             'usuario'=>'required',
             'password'=>'required',
-            'tipo_documento_id'=>'required',
+            'rols_id'=>'required',
+
 
 
         ]);
-        $usuario = new Usuario();
+        $usuario = Usuario::find($id);
         $usuario->nombre = $request->input('nombre');
         $usuario->apellido = $request->input('apellido');
         $usuario->numero = $request->input('numero');
         $usuario->correo = $request->input('correo');
         $usuario->usuario = $request->input('usuario');
-        $usuario->tipo_documento_id = $request->input('tipo_documento_id');
+        $usuario->password = $request->input('password');
+        $usuario->rols_id = $request->input('rols_id');
         $usuario->save();
         return redirect()->route('usuarios');
     }

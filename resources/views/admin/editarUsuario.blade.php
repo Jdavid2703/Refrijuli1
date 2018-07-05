@@ -1,6 +1,6 @@
 @extends('admin.layaut.loyaut')
 
-<form action="{{'updateUsuario',$usuarioid->id}}" method="post">
+<form action="{{route('updateUsuario',$usuarioid->id)}}" method="post">
     {{csrf_field()}}
     <div class="container-fluid"></div>
     <div class="form-group">
@@ -31,6 +31,15 @@
             {{--</div>--}}
 
         {{--</div>--}}
+
+        <div class="col">
+            <div class="form-group">
+                <label for="rol"><b>Rol ID</b></label>
+                <input type="text" class="form-control" value="{{$usuarioid->rols_id}}"id="rolsid" name="rols_id" aria-describedby="emailHelp">
+
+            </div>
+        </div>
+
     </div>
 
 

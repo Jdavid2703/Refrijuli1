@@ -61,9 +61,9 @@ if (!$enlace) {
                     <td><?php echo $mostrar['nombre']?></td>
                     <td><?php echo $mostrar['descripcion']?></td>
                     <td>
-                        <a class="btn btn-primary" href="">Eliminar</a>
+                        <a class="btn btn-primary" href="{{route('eliminarCategoria',$mostrar['id'])}}">Eliminar</a>
 
-                        <a class="btn btn-primary" href="">Editar</a>
+                        <a class="btn btn-primary" href="{{route('editarCategoria',$mostrar['id'])}}">Editar</a>
 
                     </td>
 
