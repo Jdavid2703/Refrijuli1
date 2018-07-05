@@ -15,7 +15,7 @@ class Producto extends Model
         'remember_token',
     ];
     public function pedidos(){
-        return $this->hasMany(Pedido::Class);
+        return $this->belongsTo(Pedido::Class);
     }
 
 }
