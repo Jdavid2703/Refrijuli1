@@ -155,6 +155,10 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::get('tipoDocumentos', 'BackEnd\TipoDocumentoController@index')->name('tipoDocumentos');
 
     Route::get('cerrarSesion', 'Auth\LoginController@cerrarSesion')->name('cerrarSesion');
+     //RUTAS DE PEDIDO
+     Route::get('pedidos', 'BackEnd\PedidoController@index')->name('pedidos');
+     Route::get('registroPedido', 'BackEnd\RegistroPedidoController@index')->name('registroPedido');
+     Route::post('guardarPedido', 'BackEnd\RegistroPedidoController@store')->name('guardarPedido');
 });
 
 

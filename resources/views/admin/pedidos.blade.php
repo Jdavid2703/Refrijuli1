@@ -6,7 +6,7 @@ $enlace = mysqli_connect("localhost", "root", "123", "bdrefri");
 
 if (!$enlace) {
     echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
-    echo "errno de depuración: " . mysqli_connect_errno() . PHP_EOL;
+    echo "error de depuración: " . mysqli_connect_errno() . PHP_EOL;
     echo "error de depuración: " . mysqli_connect_error() . PHP_EOL;
     exit;
 }
@@ -16,55 +16,18 @@ if (!$enlace) {
 <div class="container-fluid ">
 
     <div class="row ">
-        <div class="col-md-2  ">
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <table class="table">
+        <div class="col-md-1  ">
 
-                <thead class="thead-dark">
-                <tr align="center">
-                    <h3 align="center"><b>ROLES</b></h3>
-                </tr>
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">DESCRIPCIÓN</th>
-
-                </tr>
-                </thead>
-
-
-                <tbody>
-
-                <?php
-
-                $sql = "SELECT id,descripcion FROM rols ";
-                $result = mysqli_query($enlace, $sql);
-
-
-                while ($mostrar = mysqli_fetch_array($result)){
-                ?>
-                <tr>
-
-                    <td><?php echo $mostrar['id']?></td>
-                    <td><?php echo $mostrar['descripcion']?></td>
-
-jajajjaja
-
-                </tr>
-                <?php
-                }
-                ?>
-                </tbody>
-            </table>
         </div>
 
 
-        <div class="col-md-8 ">
+        <div class="col-md-10 ">
             <div align="center">
-                <h1><b>USUARIOS</b> </h1>
+                <h1><b>PEDIDOS</b> </h1>
 
 
-                <form action="{{route('registro')}}">
-                    <input class="btn btn-primary" type="submit" value="Nuevo">
+                <form action="{{route('registroPedido')}}">
+                    <input class="btn btn-primary" type="submit" value="Registrar Nuevo">
                 </form>
 
 
@@ -75,13 +38,14 @@ jajajjaja
                 <thead class="thead-dark">
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">NOMBRE</th>
-                    <th scope="col">APELLIDO</th>
-                    <th scope="col">DOCUMENTO</th>
-                    <th scope="col">CORREO</th>
-                    <th scope="col">USUARIO</th>
-                    <th scope="col">ID ROL</th>
-                    <th scope="col">ACCIONES</th>
+                    <th scope="col">fecha_entrega</th>
+                    <th scope="col">fecha_pedido</th>
+                    <th scope="col">direccion_entrega</th>
+                    <th scope="col">hora_entrega</th>
+                    <th scope="col">total_monto</th>
+                    <th scope="col">id_usuario</th>
+                    <th scope="col">id_estado</th>
+                    <th scope="col">id_producto</th>
 
 
                 </tr>
@@ -92,7 +56,7 @@ jajajjaja
 
                 <?php
 
-                $sql = "SELECT id, nombre, apellido, numero, correo, usuario, rols_id FROM usuarios";
+                $sql = "SELECT id, fecha_entrega, fecha_pedido, direccion_entrega, hora_entrega, total_monto, id_usuario, id_estado, id_producto FROM pedidos";
                 $result = mysqli_query($enlace, $sql);
 
 
@@ -101,12 +65,14 @@ jajajjaja
                 <tr>
 
                     <td><?php echo $mostrar['id']?></td>
-                    <td ><?php echo $mostrar['nombre']?></td>
-                    <td><?php echo $mostrar['apellido']?></td>
-                    <td><?php echo $mostrar['numero']?></td>
-                    <td><?php echo $mostrar['correo']?></td>
-                    <td><?php echo $mostrar['usuario']?></td>
-                    <td><?php echo $mostrar['rols_id']?></td>
+                    <td ><?php echo $mostrar['fecha_entrega']?></td>
+                    <td><?php echo $mostrar['fecha_pedido']?></td>
+                    <td><?php echo $mostrar['direccion_entrega']?></td>
+                    <td><?php echo $mostrar['hora_entrega']?></td>
+                    <td><?php echo $mostrar['total_monto']?></td>
+                    <td><?php echo $mostrar['id_usuario']?></td>
+                    <td><?php echo $mostrar['id_estado']?></td>
+                    <td><?php echo $mostrar['id_producto']?></td>
                     <td>
                         <a class="btn btn-primary" href="#">Eliminar</a>
 
@@ -129,7 +95,7 @@ jajajjaja
 
         </div>
 
-        <div class="col-md-2  ">
+        <div class="col-md-1  ">
 
 
         </div>
