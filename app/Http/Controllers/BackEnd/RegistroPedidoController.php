@@ -12,11 +12,12 @@ class RegistroPedidoController extends Controller
 
     public function index()
     {
-        $select = \App\Models\Usuario::all();
-        return view('admin.crearPedido',compact('select'));
 
-        $select = \App\Models\Estado::all();
-        return view('admin.crearPedido',compact('select'));
+        $select = \App\Models\Usuario::all();
+        $select1 = \App\Models\Estado::all();
+        $select2 = \App\Models\Producto::all();
+        return view('admin.crearPedido',compact('select','select1','select2'));
+
     }
 
 
