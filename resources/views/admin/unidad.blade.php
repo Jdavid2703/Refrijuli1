@@ -26,7 +26,7 @@ if (!$enlace) {
                 <h1><b>UNIDADES</b></h1>
 
 
-                <form action="">
+                <form action="{{route('crearCategoria')}}">
                     <input class="btn btn-primary" type="submit" value="Nuevo">
                 </form>
 
@@ -64,9 +64,9 @@ if (!$enlace) {
 
 
                         <td>
-                            <a class="btn btn-primary" href="#">Eliminar</a>
+                            <a class="btn btn-primary" href="{{route('eliminarUnidad',$mostrar['id'])}}">Eliminar</a>
 
-                            <a class="btn btn-primary" href="#">Editar</a>
+                            <a class="btn btn-primary" href="{{route('editarUnidad',$mostrar['id'])}}">Editar</a>
                         </td>
 
                     </tr>

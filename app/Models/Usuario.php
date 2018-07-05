@@ -20,4 +20,9 @@ class Usuario extends Authenticatable
     public function rols(){
         return $this->belongsTo(Rol::class);
     }
+
+    public function scopeBuscar($query, $usuario){
+        return $query->Where('usuario','LIKE',"%$usuario%");
+    }
+
 }

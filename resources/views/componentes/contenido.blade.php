@@ -71,5 +71,13 @@
                 </div>
             </div>
         </div>
+
+        <div class="col-md-6">
+
+            <h4><ins><b><a id="seguiPedidos" class="nav-link {{request()->is('contactos')?'active':''}}"
+                      href="{{route('contactos')}}">Seguimiento de pedidos</a></b></ins></h4>
+        </div>
+
+
     </div>
 </div>

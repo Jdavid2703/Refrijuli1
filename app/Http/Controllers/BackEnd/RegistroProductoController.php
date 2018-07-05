@@ -10,12 +10,27 @@ class RegistroProductoController extends Controller
 
     public function index()
     {
-        $producto = \App\Models\Producto::all();
-        return view('admin.producto',compact('producto'));
+        $select = \App\Models\Estado::all();
+        return view('admin.crearProducto',compact('select'));
     }
 
-    public function create()
+    public function store(Request $request)
     {
+        $credenciales = $this->validate($request,[
+            'nombre'=>'required',
+            'descripción'=>'required',
+            'precio'=>'required|numeric',
+            'estado'=>'required',
+
+        ]);
+
+        $productos = new Producto();
+        $productos->nombre = $request->input('nombre');
+        $productos->descripción = $request->input('descripción');
+        $productos->precio = $request->input('precio');
+        $productos->estado = $request->input('estado');
+        $productos->save();
+        return redirect()->route('producto');
 
     }
 }

@@ -26,7 +26,7 @@ if (!$enlace) {
                 <h1><b>PRODUCTO</b></h1>
 
 
-                <form action="">
+                <form action="{{route('crearProducto')}}">
                     <input class="btn btn-primary" type="submit" value="Nuevo">
                 </form>
 
@@ -51,7 +51,7 @@ if (!$enlace) {
 
                 <?php
 
-                $sql = "SELECT id, nombre, descripcion, precio, estado FROM productos";
+                $sql = "SELECT * FROM productos";
                 $result = mysqli_query($enlace, $sql);
 
 
@@ -66,9 +66,9 @@ if (!$enlace) {
                     <td><?php echo $mostrar['estado']?></td>
 
                     <td>
-                        <a class="btn btn-primary" href="#">Eliminar</a>
+                        <a class="btn btn-primary" href="{{route('eliminarProducto',$mostrar['id'])}}">Eliminar</a>
 
-                        <a class="btn btn-primary" href="#">Editar</a>
+                        <a class="btn btn-primary" href="{{route('editarProducto',$mostrar['id'])}}">Editar</a>
                     </td>
 
                 </tr>

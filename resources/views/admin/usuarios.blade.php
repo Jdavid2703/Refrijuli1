@@ -16,12 +16,12 @@ if (!$enlace) {
 <div class="container-fluid ">
 
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-1">
 
         </div>
 
 
-        <div class="col-md-8 ">
+        <div class="col-md-9 ">
             <div align="center">
                 <h1><b>USUARIOS</b></h1>
 
@@ -33,6 +33,14 @@ if (!$enlace) {
 
             </div>
             <br>
+
+            {{--FUNCIÓN BUSCAR--}}
+            <form action="{{route('usuarios')}}" class="form-inline">
+                <input type="text" name="usuario" class="form-control mr-sm-2" placeholder="Buscar aquí..." aria-label="Search" required>
+                <input type="submit" value="Buscar" class="btn btn-outline-primary">
+            </form>
+
+            {{--TABLA CON LOS DATOS--}}
             <table class="table">
 
                 <thead class="thead-dark">
@@ -89,7 +97,7 @@ if (!$enlace) {
 
         </div>
 
-        <div class="col-md-2  ">
+        <div class="col-md-2">
 
 
         </div>

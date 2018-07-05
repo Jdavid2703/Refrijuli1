@@ -1,12 +1,11 @@
 @extends('admin.layaut.loyaut')
 
-
 <?php
 $enlace = mysqli_connect("localhost", "root", "123", "bdrefri");
 
 if (!$enlace) {
     echo "Error: No se pudo conectar a MySQL." . PHP_EOL;
-    echo "error de depuración: " . mysqli_connect_errno() . PHP_EOL;
+    echo "errno de depuración: " . mysqli_connect_errno() . PHP_EOL;
     echo "error de depuración: " . mysqli_connect_error() . PHP_EOL;
     exit;
 }
@@ -15,21 +14,20 @@ if (!$enlace) {
 
 <div class="container-fluid ">
 
-    <div class="row">
-        <div class="col-md-2">
+    <div class="row ">
+        <div class="col-md-3  ">
 
         </div>
 
-
-        <div class="col-md-8 ">
+        <div class="col-md-5 ">
             <div align="center">
-                <h1><b>ESTADO</b></h1>
 
+                <h1><b>PRESENTACIONES</b></h1>
 
-                <form action="{{route('crearEstado')}}">
+                <form action="{{route('crearPresentacion')}}">
+
                     <input class="btn btn-primary" type="submit" value="Nuevo">
                 </form>
-
 
             </div>
             <br>
@@ -38,9 +36,7 @@ if (!$enlace) {
                 <thead class="thead-dark">
                 <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">NOMBRE</th>
-                    <th scope="col">DESCRIPCION</th>
-
+                    <th scope="col">DESCRIPCIÓN</th>
 
                 </tr>
                 </thead>
@@ -48,9 +44,10 @@ if (!$enlace) {
 
                 <tbody>
 
+
                 <?php
 
-                $sql = "SELECT id,nombre, descripcion FROM estados";
+                $sql = "SELECT * FROM presentaciones";
                 $result = mysqli_query($enlace, $sql);
 
 
@@ -59,15 +56,14 @@ if (!$enlace) {
                 <tr>
 
                     <td><?php echo $mostrar['id']?></td>
-                    <td><?php echo $mostrar['nombre']?></td>
                     <td><?php echo $mostrar['descripcion']?></td>
-
-
                     <td>
-                        <a class="btn btn-primary" href="{{route('eliminarEstado',$mostrar['id'])}}">Eliminar</a>
+                        <a class="btn btn-primary" href="{{route('eliminarPresentaciones',$mostrar['id'])}}">Eliminar</a>
 
-                        <a class="btn btn-primary" href="{{route('editarEstado',$mostrar['id'])}}">Editar</a>
+                        <a class="btn btn-primary" href="{{route('editarPresentaciones',$mostrar['id'])}}">Editar</a>
+
                     </td>
+
 
                 </tr>
                 <?php
@@ -82,9 +78,11 @@ if (!$enlace) {
 
         </div>
 
-        <div class="col-md-2  ">
+        <div class="col-md-3  ">
 
 
         </div>
+
     </div>
 </div>
+

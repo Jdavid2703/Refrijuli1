@@ -105,7 +105,6 @@ Route::get('contactos', ['as' => 'contactos', 'uses' => 'VistasController\VistaC
 Route::get('registro', 'BackEnd\RegistroUsuController@index')->name('registro');
 
 
-
 Route::post('login', 'Auth\LoginController@login')->name('login');
 
 
@@ -132,14 +131,33 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::get('ediUsuario/{id}', 'BackEnd\UsuariosRegistradosController@show')->name('ediUsuario');
     Route::post('updateUsuario/{id}', 'BackEnd\UsuariosRegistradosController@update')->name('updateUsuario');
     Route::get('eliminarUsuario/{id}', 'BackEnd\UsuariosRegistradosController@destroy')->name('eliminarUsuario');
+    //BOTON BUSCAR USUARIOS
+    Route::get('buscar', 'BackEnd\UsuariosRegistradosController@Buscar')->name('buscar');
 
 //   RUTAS PRODUCTO
-    Route::get('producto', 'BackEnd\RegistroProductoController@index')->name('producto');
+    Route::get('producto', 'BackEnd\ProductosRegistradosController@index')->name('producto');
+    Route::get('crearProducto', 'BackEnd\RegistroProductoController@index')->name('crearProducto');
+    Route::post('guardarProducto', 'BackEnd\RegistroProductoController@store')->name('guardarProducto');
+    Route::get('editarProducto/{id}', 'BackEnd\ProductosRegistradosController@show')->name('editarProducto');
+    Route::post('updateProducto/{id}', 'BackEnd\ProductosRegistradosController@update')->name('updateProducto');
+    Route::get('eliminarProducto/{id}', 'BackEnd\ProductosRegistradosController@destroy')->name('eliminarProducto');
 
 //RUTAS ESTADO
     Route::get('estado', 'BackEnd\EstadoController@index')->name('estado');
+    Route::get('crearEstado', 'BackEnd\EstadoController@create')->name('crearEstado');
+    Route::post('guardarEstado', 'BackEnd\EstadoController@store')->name('guardarEstado');
+    Route::get('editarEstado/{id}', 'BackEnd\EstadoController@show')->name('editarEstado');
+    Route::post('updateEstado/{id}', 'BackEnd\EstadoController@update')->name('updateEstado');
+    Route::get('eliminarEstado/{id}', 'BackEnd\EstadoController@destroy')->name('eliminarEstado');
+
 //RUTAS UNIDAD
     Route::get('unidad', 'BackEnd\UnidadController@index')->name('unidad');
+    Route::get('crearUnidad', 'BackEnd\UnidadController@create')->name('crearUnidad');
+    Route::post('guardarUnidad', 'BackEnd\UnidadController@store')->name('guardarUnidad');
+    Route::get('editarUnidad/{id}', 'BackEnd\UnidadController@show')->name('editarUnidad');
+    Route::post('updateUnidad/{id}', 'BackEnd\UnidadController@update')->name('updateUnidad');
+    Route::get('eliminarUnidad/{id}', 'BackEnd\UnidadController@destroy')->name('eliminarUnidad');
+
 //RUTAS INSUMO
     Route::get('insumo', 'BackEnd\InsumoController@index')->name('insumo');
 
@@ -151,14 +169,23 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::post('updateCategoria/{id}', 'BackEnd\CategoriaController@update')->name('updateCategoria');
     Route::get('eliminarCategoria/{id}', 'BackEnd\CategoriaController@destroy')->name('eliminarCategoria');
 
+//  RUTAS PRESENTACION
+    Route::get('presentacion', 'BackEnd\PresentacionController@index')->name('presentacion');
+    Route::get('crearPresentacion', 'BackEnd\PresentacionController@create')->name('crearPresentacion');
+    Route::post('guardarPresentacion', 'BackEnd\PresentacionController@store')->name('guardarPresentacion');
+    Route::get('editarPresentacion/{id}', 'BackEnd\PresentacionController@show')->name('editarPresentacion');
+    Route::post('updatePresentacion/{id}', 'BackEnd\PresentacionController@update')->name('updatePresentacion');
+    Route::get('eliminarPresentacion/{id}', 'BackEnd\PresentacionController@destroy')->name('eliminarPresentacion');
+
+//  RUTAS DE PEDIDO
+    Route::get('pedidos', 'BackEnd\PedidoController@index')->name('pedidos');
+    Route::get('registroPedido', 'BackEnd\RegistroPedidoController@index')->name('registroPedido');
+    Route::post('guardarPedido', 'BackEnd\RegistroPedidoController@store')->name('guardarPedido');
+
 
     Route::get('tipoDocumentos', 'BackEnd\TipoDocumentoController@index')->name('tipoDocumentos');
 
     Route::get('cerrarSesion', 'Auth\LoginController@cerrarSesion')->name('cerrarSesion');
-     //RUTAS DE PEDIDO
-     Route::get('pedidos', 'BackEnd\PedidoController@index')->name('pedidos');
-     Route::get('registroPedido', 'BackEnd\RegistroPedidoController@index')->name('registroPedido');
-     Route::post('guardarPedido', 'BackEnd\RegistroPedidoController@store')->name('guardarPedido');
 });
 
 

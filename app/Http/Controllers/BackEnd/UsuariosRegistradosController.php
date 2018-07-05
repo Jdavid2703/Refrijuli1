@@ -9,42 +9,22 @@ use App\Http\Controllers\Controller;
 class UsuariosRegistradosController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
+        $usuario = Usuario::Buscar($request->usuario)->paginate(10);
         $usuario = \App\Models\Usuario::all();
         return view('admin.usuarios',compact('usuario'));
     }
 
     public function create()
     {
-        return view('admin.crearUsuario');
+
     }
 
 
     public function store(Request $request)
     {
-        $credenciales = $this->validate($request,[
-            'nombre'=>'required',
-            'apellido'=>'required',
-            'numero'=>'required',
-            'correo'=>'required',
-            'usuario'=>'required',
-            'password'=>'required',
-            'rols_id'=>'required',
 
-
-
-        ]);
-        $usuario = new Usuario();
-        $usuario->nombre = $request->input('nombre');
-        $usuario->apellido = $request->input('apellido');
-        $usuario->numero = $request->input('numero');
-        $usuario->correo = $request->input('correo');
-        $usuario->usuario = $request->input('usuario');
-        $usuario->password = $request->input('password');
-        $usuario->rols_id = $request->input('rols_id');
-        $usuario->save();
-        return redirect()->route('usuarios');
     }
 
 
@@ -96,4 +76,5 @@ class UsuariosRegistradosController extends Controller
         $usuario->delete();
         return redirect()->route('usuarios');
     }
+
 }

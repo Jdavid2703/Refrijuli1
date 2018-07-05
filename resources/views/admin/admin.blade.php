@@ -53,7 +53,7 @@
             </li>
 
             <li class="nav-item">
-                <h4><b><a id="presenta" class="nav-link" href="">Presentación</a></b>
+                <h4><b><a id="presenta" class="nav-link" href="{{route('presentacion')}}">Presentación</a></b>
                 </h4>
             </li>
 
