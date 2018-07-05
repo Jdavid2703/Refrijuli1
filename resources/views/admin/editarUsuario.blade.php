@@ -19,18 +19,18 @@
 
             </div>
         </div>
-        <div class="col">
-            <div class="form-group">
-                <label for="exampleSelect1"><b>Tipo de Documento</b></label>
-                <select  class="form-control" value="{{$usuarioid->tipo_documento_id}}" id="exampleSelect1" name="tipo_documentos_id">
-                    <option value="" selected disabled hidden>Seleccionar</option>
-                    @foreach($select as $item)
-                        <option value="{{$item->id}}">{{$item->nombre}}</option>
-                    @endforeach
-                </select>
-            </div>
+        {{--<div class="col">--}}
+            {{--<div class="form-group">--}}
+                {{--<label for="exampleSelect1"><b>Tipo de Documento</b></label>--}}
+                {{--<select  class="form-control" value="{{$usuarioid->tipo_documento_id}}" id="exampleSelect1" name="tipo_documentos_id">--}}
+                    {{--<option value="" selected disabled hidden>Seleccionar</option>--}}
+                    {{--@foreach($select as $item)--}}
+                        {{--<option value="{{$item->id}}">{{$item->nombre}}</option>--}}
+                    {{--@endforeach--}}
+                {{--</select>--}}
+            {{--</div>--}}
 
-        </div>
+        {{--</div>--}}
     </div>
 
 
@@ -44,7 +44,7 @@
     </div>
     <div class="form-group">
         <label for="password"><b>Contraseña</b></label>
-        <input type="password" class="form-control" value="{{$usuarioid->password}}" id="password" name="password">
+        <input type="password" class="form-control" value="" id="password" name="password">
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
     <button type="reset" class="btn btn-primary">Cancelar</button>
