@@ -90,6 +90,6 @@ class UsuariosRegistradosController extends Controller
     {
         $usuario = Usuario::find($id);
         $usuario->delete();
-        return redirect()->route('usuario');
+        return redirect()->route('usuarios');
     }
 }
