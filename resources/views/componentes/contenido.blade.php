@@ -1,17 +1,16 @@
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
 {{--IMAGENES DE COMIDAS--}}
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12" align="center">
 
-            <img src="img/bienvenido.png">
+            <img src="img/bienvenido.png" width="500" height="150">
             <br>
             <br>
             <br>
-            <h3>¿Que esperas para pedir en <b>Refrijuli</b>?</h3>
+
 
         </div>
-
 
 
     </div>
@@ -31,9 +30,10 @@
                 </div>
             </div>
 
-
+            <div class="col-md-1">
+            </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
 
             <div class="card mb-3">
                 <img class="card-img-top img-fluid w-100"
@@ -49,6 +49,27 @@
             </div>
 
 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="card mb-3">
+                <a href="#">
+                    <img class="card-img-top img-fluid w-100"
+                         src="https://www.vvsupremo.com/wp-content/uploads/2016/02/900X570_Mexican-Style-Hot-Dogs.jpg"
+                         alt="">
+                </a>
+                <div class="card-body">
+                    <h6 class="card-title mb-1"><a href="#">Perros calienticos!</a></h6>
+                    <p class="card-text small">De lo mejor que hay, con un condimento especial
+                        <a href="#">#refrijuli</a>
+                        <a href="#">#hotdog</a>
+                        <a href="#">#parallevar</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
