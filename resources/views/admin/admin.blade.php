@@ -33,7 +33,7 @@
             </li>
 
             <li class="nav-item">
-                <h4><b><a id="categori" class="nav-link" href="#">Pedidos</a></b>
+                <h4><b><a id="categori" class="nav-link" href="{{route('pedidos')}}">Pedidos</a></b>
                 </h4>
             </li>
 
