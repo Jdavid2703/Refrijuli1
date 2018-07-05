@@ -44,7 +44,7 @@ if (!$enlace) {
                     <th scope="col">CORREO</th>
                     <th scope="col">USUARIO</th>
                     <th scope="col">ID ROL</th>
-                    <th scope="col">ACCIONES</th>
+
 
 
                 </tr>

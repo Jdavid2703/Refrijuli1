@@ -1,23 +1,40 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+@extends('admin.layaut.loyaut')
 
+<div align="center">
+    <h1><b>EDITAR ROL</b></h1>
+    <br>
+</div>
 <form action="{{route('update',$rolid->id)}}" method="post">
     {{csrf_field()}}
 
-    <fieldset class="form-group">
-        <label for="usuario">Rol</label>
-        <input type="text" class="form-control" value="{{$rolid->rol}}" id="rol" name="rol">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
 
-    </fieldset>
-    <fieldset class="form-group">
-        <label for="usuario">Descripcion</label>
-        <input type="text" class="form-control" value="{{$rolid->descripcion}}" id="Descripcion" name="descripcion">
+            </div>
+            <div class="col-md-6">
 
-    </fieldset>
+                <fieldset class="form-group">
+                    <label for="usuario"><b>Rol</b></label>
+                    <input type="text" class="form-control" value="{{$rolid->rol}}" id="rol" name="rol">
 
-    <div>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-        <button type="submit" class="btn btn-primary">Actualizar</button>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="usuario"><b>Descripcion</b></label>
+                    <input type="text" class="form-control" value="{{$rolid->descripcion}}" id="Descripcion"
+                           name="descripcion">
+
+                </fieldset>
+
+                <div>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Actualizar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+
+        </div>
     </div>
 </form>
 

@@ -27,7 +27,7 @@ if (!$enlace) {
 
                 <form action="{{route('crearRol')}}">
 
-                    <input class="btn btn-primary" type="submit" value="Crear">
+                    <input class="btn btn-primary" type="submit" value="Nuevo">
                 </form>
 
             </div>

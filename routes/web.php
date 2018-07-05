@@ -105,7 +105,6 @@ Route::get('contactos', ['as' => 'contactos', 'uses' => 'VistasController\VistaC
 Route::get('registro', 'BackEnd\RegistroUsuController@index')->name('registro');
 
 
-
 Route::post('login', 'Auth\LoginController@login')->name('login');
 
 
@@ -136,19 +135,23 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 //   RUTAS PRODUCTO
     Route::get('producto', 'BackEnd\RegistroProductoController@index')->name('producto');
 
-//RUTAS ESTADO
+//   RUTAS ESTADO
     Route::get('estado', 'BackEnd\EstadoController@index')->name('estado');
-//RUTAS UNIDAD
+
+//   RUTAS UNIDAD
     Route::get('unidad', 'BackEnd\UnidadController@index')->name('unidad');
-//RUTAS INSUMO
+
+//  RUTAS INSUMO
     Route::get('insumo', 'BackEnd\InsumoController@index')->name('insumo');
 
 
-//  RUTAS CATEGORIAS
+//   RUTAS CATEGORIAS
     Route::get('categoria', 'BackEnd\CategoriaController@index')->name('categoria');
 
+//   RUTAS TIPO DOCUMENTO
     Route::get('tipoDocumentos', 'BackEnd\TipoDocumentoController@index')->name('tipoDocumentos');
 
+//   CERRAR SESIÓN
     Route::get('cerrarSesion', 'Auth\LoginController@cerrarSesion')->name('cerrarSesion');
 });
 
