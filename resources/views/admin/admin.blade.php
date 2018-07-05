@@ -48,7 +48,7 @@
             </li>
 
             <li class="nav-item">
-                <h4><b><a id="insumoo" class="nav-link" href="">Insumos</a></b>
+                <h4><b><a id="insumoo" class="nav-link" href="{{route('insumo')}}">Insumos</a></b>
                 </h4>
             </li>
 

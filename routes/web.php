@@ -148,6 +148,7 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 Route::get('estado', 'BackEnd\EstadoController@index')->name('estado');
 //RUTAS UNIDAD
 Route::get('unidad', 'BackEnd\UnidadController@index')->name('unidad');
-
+//RUTAS INSUMO
+Route::get('insumo', 'BackEnd\InsumoController@index')->name('insumo');
 
 
