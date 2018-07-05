@@ -20,7 +20,7 @@ class RegistroProductoController extends Controller
             'nombre'=>'required',
             'descripción'=>'required',
             'precio'=>'required|numeric',
-            'estado'=>'required',
+
 
         ]);
 
@@ -28,7 +28,6 @@ class RegistroProductoController extends Controller
         $productos->nombre = $request->input('nombre');
         $productos->descripción = $request->input('descripción');
         $productos->precio = $request->input('precio');
-        $productos->estado = $request->input('estado');
         $productos->save();
         return redirect()->route('producto');
 
