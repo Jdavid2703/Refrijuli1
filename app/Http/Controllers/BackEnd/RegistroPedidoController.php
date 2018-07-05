@@ -14,6 +14,9 @@ class RegistroPedidoController extends Controller
     {
         $select = \App\Models\Usuario::all();
         return view('admin.crearPedido',compact('select'));
+
+        $select = \App\Models\Estado::all();
+        return view('admin.crearPedido',compact('select'));
     }
 
 

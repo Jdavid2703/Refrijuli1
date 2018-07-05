@@ -43,20 +43,29 @@
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <label for="numero"><b>id_usuario</b></label>
-                            <input type="text" class="form-control" id="numero" name="numero"
-                                   aria-describedby="emailHelp">
-
+                            <label for="exampleSelect1"><b>id Usuario</b></label>
+                            <select class="form-control" id="exampleSelect1" name="id">
+                                <option value="" selected disabled hidden>Seleccionar</option>
+                                @foreach($select as $item)
+                                    <option value="{{$item->id}}">{{$item->id}}</option>
+                                @endforeach
+                            </select>
                         </div>
+
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <label for="numero"><b>id_estado</b></label>
-                            <input type="text" class="form-control" id="numero" name="numero"
-                                   aria-describedby="emailHelp">
-
+                            <label for="exampleSelect1"><b> Estado</b></label>
+                            <select class="form-control" id="exampleSelect1" name="nombre">
+                                <option value="" selected disabled hidden>Seleccionar</option>
+                                @foreach($select as $item)
+                                    <option value="{{$item->id}}">{{$item->nombre}}</option>
+                                @endforeach
+                            </select>
                         </div>
+
                     </div>
+
 
 
                 </div>
@@ -69,18 +78,7 @@
                     </div>
                 </div>
 
-                <div class="col">
-                    <div class="form-group">
-                        <label for="exampleSelect1"><b>ID Usuario</b></label>
-                        <select class="form-control" id="exampleSelect1" name="id">
-                            <option value="" selected disabled hidden>Seleccionar</option>
-                            @foreach($select as $item)
-                                <option value="{{$item->id}}">{{$item->id}}</option>
-                            @endforeach
-                        </select>
-                    </div>
 
-                </div>
 
             </div>
 
