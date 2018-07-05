@@ -81,16 +81,16 @@
                     </div>
                     <div class="col-md-5">
 
-                        <div class="form-group">
-                            <label for="exampleSelect1"><b>id Usuario</b></label>
-                            <select class="form-control" id="exampleSelect1" name="id_usuario">
-                                <option value="{{$pedidoid->id_usuario}}" selected disabled hidden>Seleccionar</option>
-                                @foreach($select as $item)
-                                    <option value="{{$item->id}}">{{$item->id}}</option>
-                                @endforeach
-                            </select>
+                        {{--<div class="form-group">--}}
+                            {{--<label for="exampleSelect1"><b>id Usuario</b></label>--}}
+                            {{--<select class="form-control" id="exampleSelect1" name="id_usuario">--}}
+                                {{--<option value="{{$pedidoid->id_usuario}}" selected disabled hidden>Seleccionar</option>--}}
+                                {{--@foreach($select as $item)--}}
+                                    {{--<option value="{{$item->id}}">{{$item->id}}</option>--}}
+                                {{--@endforeach--}}
+                            {{--</select>--}}
 
-                        </div>
+                        {{--</div>--}}
                     </div>
                     <div class="col-md-5">
                         <div class="form-group">
@@ -112,30 +112,30 @@
                     </div>
 
                     <div class="col-md-5">
-                        <div class="form-group">
+                        {{--<div class="form-group">--}}
 
-                            <label for="exampleSelect1"><b>Estado</b></label>
-                            <select class="form-control" id="exampleSelect1" name="id_estado">
-                                <option value="{{$pedidoid->id_estado}}" selected disabled hidden>Seleccionar</option>
-                                @foreach($select1 as $item)
-                                    <option value="{{$item->id}}">{{$item->nombre}}</option>
-                                @endforeach
+                            {{--<label for="exampleSelect1"><b>Estado</b></label>--}}
+                            {{--<select class="form-control" id="exampleSelect1" name="id_estado">--}}
+                                {{--<option value="{{$pedidoid->id_estado}}" selected disabled hidden>Seleccionar</option>--}}
+                                {{--@foreach($select1 as $item)--}}
+                                    {{--<option value="{{$item->id}}">{{$item->nombre}}</option>--}}
+                                {{--@endforeach--}}
 
-                            </select>
-                        </div>
+                            {{--</select>--}}
+                        {{--</div>--}}
                     </div>
 
 
                     <div class="col-md-5">
-                        <div class="form-group">
-                            <label for="exampleSelect1"><b> Producto</b></label>
-                            <select class="form-control" id="exampleSelect1" name="id_producto">
-                                <option value="{{$pedidoid->id_producto}}" selected disabled hidden>Seleccionar</option>
-                                @foreach($select2 as $item)
-                                    <option value="{{$item->id}}">{{$item->nombre}}</option>
-                                @endforeach
-                            </select>
-                        </div>
+                        {{--<div class="form-group">--}}
+                            {{--<label for="exampleSelect1"><b> Producto</b></label>--}}
+                            {{--<select class="form-control" id="exampleSelect1" name="id_producto">--}}
+                                {{--<option value="{{$pedidoid->id_producto}}" selected disabled hidden>Seleccionar</option>--}}
+                                {{--@foreach($select2 as $item)--}}
+                                    {{--<option value="{{$item->id}}">{{$item->nombre}}</option>--}}
+                                {{--@endforeach--}}
+                            {{--</select>--}}
+                        {{--</div>--}}
                     </div>
 
                     <div class="col-md-1">
