@@ -143,7 +143,6 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 //RUTAS INSUMO
     Route::get('insumo', 'BackEnd\InsumoController@index')->name('insumo');
 
-
 //  RUTAS CATEGORIAS
     Route::get('categoria', 'BackEnd\CategoriaController@index')->name('categoria');
 
