@@ -12,6 +12,7 @@ class RegistroUsuController extends Controller
 
     public function index()
     {
+
         $select = \App\Models\TipoDocumento::all();
       return view('admin.crearUsuario',compact('select'));
     }

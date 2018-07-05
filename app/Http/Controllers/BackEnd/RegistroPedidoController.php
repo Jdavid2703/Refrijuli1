@@ -12,7 +12,7 @@ class RegistroPedidoController extends Controller
 
     public function index()
     {
-        $select = \App\Models\TipoDocumento::all();
+        $select = \App\Models\Usuario::all();
         return view('admin.crearPedido',compact('select'));
     }
 

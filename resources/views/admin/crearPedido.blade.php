@@ -69,6 +69,19 @@
                     </div>
                 </div>
 
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleSelect1"><b>ID Usuario</b></label>
+                        <select class="form-control" id="exampleSelect1" name="id">
+                            <option value="" selected disabled hidden>Seleccionar</option>
+                            @foreach($select as $item)
+                                <option value="{{$item->id}}">{{$item->id}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                </div>
+
             </div>
 
             <button type="submit" class="btn btn-primary">Enviar</button>
