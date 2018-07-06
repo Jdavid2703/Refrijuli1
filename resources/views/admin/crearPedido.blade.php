@@ -157,7 +157,7 @@
 
                 <div class="form-group">
                     <label for="exampleSelect1"><b> Insumo </b></label>
-                    <select class="form-control" id="exampleSelect1" name="nombre">
+                    <select class="form-control" id="exampleSelect1" name="id_insumo">
                         <option value="" selected disabled hidden>Seleccionar</option>
                         @foreach($select3 as $item)
                             <option value="{{$item->id}}">{{$item->nombre}}</option>
