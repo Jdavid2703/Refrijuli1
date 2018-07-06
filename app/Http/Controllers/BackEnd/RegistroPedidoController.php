@@ -16,7 +16,8 @@ class RegistroPedidoController extends Controller
         $select = \App\Models\Usuario::all();
         $select1 = \App\Models\Estado::all();
         $select2 = \App\Models\Producto::all();
-        return view('admin.crearPedido', compact('select', 'select1', 'select2'));
+        $select3 = \App\Models\Insumo::all();
+        return view('admin.crearPedido', compact('select', 'select1', 'select2','select3'));
 
     }
 

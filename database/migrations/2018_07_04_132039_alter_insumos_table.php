@@ -20,7 +20,6 @@ class AlterInsumosTable extends Migration
                 ->on('categorias');
 
 
-
         });
     }
 

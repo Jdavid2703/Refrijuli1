@@ -20,5 +20,9 @@ class Insumo extends Model
         return $this->belongsTo(Categoria::Class);
     }
 
+    public function pedidos()
+    {
+        return $this->hasMany(Pedido::Class);
+    }
 
 }

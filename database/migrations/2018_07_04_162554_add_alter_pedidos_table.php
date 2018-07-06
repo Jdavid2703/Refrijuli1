@@ -29,6 +29,11 @@ class AddAlterPedidosTable extends Migration
                 ->references('id')
                 ->on('productos');
 
+            $table->unsignedInteger('id_insumo');
+            $table->foreign('id_insumo')
+                ->references('id')
+                ->on('insumos');
+
         });
     }
 
