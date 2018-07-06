@@ -26,7 +26,7 @@
 
                         <div class="form-group">
                             <label for="nombre"><b>Nombre</b></label>
-                            <input type="date" class="form-control" id="nombre" name="nombre"
+                            <input type="text" class="form-control" id="nombre" name="nombre"
                                    aria-describedby="txtNombre">
                         </div>
 
@@ -36,7 +36,7 @@
 
                         <div class="form-group">
                             <label for="descripcion"><b>Descripcion</b></label>
-                            <input type="date" class="form-control" id="apellido" name="descripcion"
+                            <input type="text" class="form-control" id="apellido" name="descripcion"
                                    aria-describedby="emailHelp">
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                         <div class="form-group">
 
                             <label for="stock_min"><b>stock_min</b></label>
-                            <input type="time" class="form-control" id="numero" name="stock_min"
+                            <input type="text" class="form-control" id="numero" name="stock_min"
                                    aria-describedby="emailHelp">
 
                         </div>
@@ -83,7 +83,7 @@
 
                         <div class="form-group">
                             <label for="stock_max"><b>stock max</b></label>
-                            <input type="time" class="form-control" id="numero" name="stock_max"
+                            <input type="text" class="form-control" id="numero" name="stock_max"
                                    aria-describedby="emailHelp">
 
                         </div>
@@ -111,7 +111,7 @@
                         <div class="form-group">
 
                             <label for="disponibilidad"><b>Disponibilidad</b></label>
-                            <input type="time" class="form-control" id="numero" name="disponibilidad"
+                            <input type="text" class="form-control" id="numero" name="disponibilidad"
                                    aria-describedby="emailHelp">
                         </div>
                     </div>
