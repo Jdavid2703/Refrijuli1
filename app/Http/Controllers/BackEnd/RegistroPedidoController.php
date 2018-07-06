@@ -52,7 +52,7 @@ class RegistroPedidoController extends Controller
         $pedido->id_usuario = $request->input('id_usuario');
         $pedido->id_estado = $request->input('id_estado');
         $pedido->id_producto = $request->input('id_producto');
-        $pedido->id_producto = $request->input('id_insumo');
+        $pedido->id_insumo = $request->input('id_insumo');
         $pedido->save();
         return redirect()->route('pedidos');
 
