@@ -119,7 +119,7 @@
 
                     <div class="col-md-5">
                         <div class="form-group">
-                            <label for="exampleSelect1"><b> Categoria</b></label>
+                            <label for="exampleSelect1"><b> Categori</b></label>
                             <select class="form-control" id="exampleSelect1" name="id_categoria">
                                 <option value="" selected disabled hidden>Seleccionar</option>
                                 @foreach($select as $item)
