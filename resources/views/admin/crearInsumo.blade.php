@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <br><br>
-                <h1><b>REGISTRAR INSU</b></h1>
+                <h1><b>REGISTRAR INSUMO</b></h1>
                 <br><br>
 
             </div>

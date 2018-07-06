@@ -6,7 +6,7 @@ stock_min@extends('admin.layaut.loyaut')
         <div class="row">
             <div class="col-md-12 text-center">
                 <br><br>
-                <h1><b>EDITAR INSU</b></h1>
+                <h1><b>EDITAR INSUMO</b></h1>
                 <br><br>
 
             </div>

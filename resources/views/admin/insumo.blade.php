@@ -84,7 +84,7 @@ if (!$enlace) {
                     <td>
                         <a class="btn btn-primary" href="#">Eliminar</a>
 
-                        <a class="btn btn-primary" href="#">Edita</a>
+                        <a class="btn btn-primary" href="#">Editar</a>
                     </td>
 
                 </tr>
