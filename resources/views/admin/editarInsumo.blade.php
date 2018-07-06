@@ -6,7 +6,7 @@ stock_min@extends('admin.layaut.loyaut')
         <div class="row">
             <div class="col-md-12 text-center">
                 <br><br>
-                <h1><b>EDITAR INSUMO</b></h1>
+                <h1><b>EDITAR INSU</b></h1>
                 <br><br>
 
             </div>
@@ -36,7 +36,7 @@ stock_min@extends('admin.layaut.loyaut')
 
                         <div class="form-group">
                             <label for="descripcion"><b>Descripcion</b></label>
-                            <input type="date" class="form-control" value="{{$insumoid->fecha_pedido}}" id="apellido" name="descripcion"
+                            <input type="date" class="form-control" value="{{$insumoid->descripcion}}" id="apellido" name="descripcion"
                                    aria-describedby="emailHelp">
                         </div>
                     </div>
@@ -53,7 +53,7 @@ stock_min@extends('admin.layaut.loyaut')
 
                         <div class="form-group">
                             <label for="cantidad"><b>Cantidad</b></label>
-                            <input type="text" class="form-control" value="{{$insumoid->Descripcion}}" id="numero" name="cantidad"
+                            <input type="text" class="form-control" value="{{$insumoid->cantidad}}" id="numero" name="cantidad"
                                    aria-describedby="emailHelp">
 
                         </div>

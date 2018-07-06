@@ -4,7 +4,7 @@ namespace App\Http\Controllers\BackEnd;
 
 use App\Models\Insumo;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Controlle;
 
 class InsumoController extends Controller
 {
