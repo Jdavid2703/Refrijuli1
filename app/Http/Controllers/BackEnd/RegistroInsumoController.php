@@ -13,7 +13,7 @@ class RegistroInsumoController extends Controller
     public function index()
     {
 
-        $select = \App\Models\Categori::all();
+        $select = \App\Models\Categoria::all();
         return view('admin.crearInsumo', compact('select'));
 
     }
