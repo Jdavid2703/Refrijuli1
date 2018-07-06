@@ -107,24 +107,24 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-1">
+                    <div class="col-md-2">
 
                     </div>
 
-                    <div class="col-md-5">
+                    <div class="col-md-4">
                         <label for="precio_unitario"><b>Precio Unitario</b></label>
                         <input type="text" class="form-control" value="{{$insumoid->precio_unitario}}" id="numero" name="precio_unitario"
                                aria-describedby="emailHelp">
                     </div>
 
 
-                    <div class="col-md-5">
+                    <div class="col-md-4">
                         <label for="disponibilidad"><b>Disponibilidad</b></label>
                         <input type="text" class="form-control" value="{{$insumoid->disponibilidad}}" id="numero" name="disponibilidad"
                                aria-describedby="emailHelp">
                     </div>
 
-                    <div class="col-md-1">
+                    <div class="col-md-2">
 
                     </div>
 
@@ -135,6 +135,7 @@
             </div>
         </div>
     </div>
+
     <div class="text-center">
         <br><br>
         <button type="submit" class="btn btn-primary">Enviar</button> &ensp;

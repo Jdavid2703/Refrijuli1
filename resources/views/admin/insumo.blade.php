@@ -16,12 +16,8 @@ if (!$enlace) {
 <div class="container-fluid ">
 
     <div class="row">
-        <div class="col-md-1">
 
-        </div>
-
-
-        <div class="col-md-10 ">
+        <div class="col-md-12 ">
             <div align="center">
                 <h1><b>INSUMO</b></h1>
 
@@ -44,8 +40,6 @@ if (!$enlace) {
                     <th scope="col">ID CATEGORIA</th>
                     <th scope="col">STOCK MINIMO</th>
                     <th scope="col">STOCK MAXIMO</th>
-                    <th scope="col">ID PRESENTACION</th>
-                    <th scope="col">ID UNIDAD</th>
                     <th scope="col">PRECIO UNITARIO</th>
                     <th scope="col">DISPONIBILIDAD</th>
 
@@ -77,13 +71,12 @@ if (!$enlace) {
                     <td><?php echo $mostrar['precio_unitario']?></td>
                     <td><?php echo $mostrar['disponibilidad']?></td>
 
-
-
                     <td>
                         <a class="btn btn-primary" href="{{route('eliminarInsumo',$mostrar['id'])}}">Eliminar</a>
 
+
                         <a class="btn btn-primary" href="{{route('editarInsumo',$mostrar['id'])}}">Editar</a>
-                    </td>
+
 
                 </tr>
                 <?php
@@ -98,9 +91,6 @@ if (!$enlace) {
 
         </div>
 
-        <div class="col-md-1  ">
 
-
-        </div>
     </div>
 </div>
