@@ -42,20 +42,14 @@
                 </h4>
             </li>
 
-            <li class="nav-item">
-                <h4><b><a id="unidadd" class="nav-link" href="{{route('unidad')}}">Unidades</a></b>
-                </h4>
-            </li>
+
 
             <li class="nav-item">
                 <h4><b><a id="insumoo" class="nav-link" href="{{route('insumo')}}">Insumos</a></b>
                 </h4>
             </li>
 
-            <li class="nav-item">
-                <h4><b><a id="presenta" class="nav-link" href="{{route('presentacion')}}">Presentación</a></b>
-                </h4>
-            </li>
+
 
 
         </ul>

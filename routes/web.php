@@ -150,23 +150,16 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::post('updateEstado/{id}', 'BackEnd\EstadoController@update')->name('updateEstado');
     Route::get('eliminarEstado/{id}', 'BackEnd\EstadoController@destroy')->name('eliminarEstado');
 
-//RUTAS UNIDAD
-    Route::get('unidad', 'BackEnd\UnidadController@index')->name('unidad');
-    Route::get('registroUnidad', 'BackEnd\RegistroPedidoController@index')->name('registroPedido');
-    Route::get('crearUnidad', 'BackEnd\UnidadController@create')->name('crearUnidad');
-    Route::post('guardarUnidad', 'BackEnd\UnidadController@store')->name('guardarUnidad');
-    Route::get('editarUnidad/{id}', 'BackEnd\UnidadController@show')->name('editarUnidad');
-    Route::post('updateUnidad/{id}', 'BackEnd\UnidadController@update')->name('updateUnidad');
-    Route::get('eliminarUnidad/{id}', 'BackEnd\UnidadController@destroy')->name('eliminarUnidad');
+//   RUTAS UNIDAD
+//    Route::get('unidad', 'BackEnd\UnidadController@index')->name('unidad');
+//    Route::get('crearUnidad', 'BackEnd\UnidadController@create')->name('crearUnidad');
+//    Route::post('guardarUnidad', 'BackEnd\UnidadController@store')->name('guardarUnidad');
+//    Route::get('editarUnidad/{id}', 'BackEnd\UnidadController@show')->name('editarUnidad');
+//    Route::post('updateUnidad/{id}', 'BackEnd\UnidadController@update')->name('updateUnidad');
+//    Route::get('eliminarUnidad/{id}', 'BackEnd\UnidadController@destroy')->name('eliminarUnidad');
 
 //RUTAS INSUMO
     Route::get('insumo', 'BackEnd\InsumoController@index')->name('insumo');
-    Route::get('registroInsumo', 'BackEnd\RegistroInsumoController@index')->name('registroInsumo');
-    Route::post('guardarInsumo', 'BackEnd\RegistroInsumoController@store')->name('guardarInsumo');
-    Route::get('editarInsumo/{id}', 'BackEnd\RegistroInsumoController@show')->name('editarInsumo');
-    Route::post('updateInsumo/{id}', 'BackEnd\RegistroInsumoController@update')->name('updateInsumo');
-    Route::get('eliminarInsumo/{id}', 'BackEnd\RegistroInsumoController@destroy')->name('eliminarInsumo');
-
 
 //  RUTAS CATEGORIAS
     Route::get('categoria', 'BackEnd\CategoriaController@index')->name('categoria');
@@ -176,13 +169,13 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::post('updateCategoria/{id}', 'BackEnd\CategoriaController@update')->name('updateCategoria');
     Route::get('eliminarCategoria/{id}', 'BackEnd\CategoriaController@destroy')->name('eliminarCategoria');
 
-//  RUTAS PRESENTACION
-    Route::get('presentacion', 'BackEnd\PresentacionController@index')->name('presentacion');
-    Route::get('crearPresentacion', 'BackEnd\PresentacionController@create')->name('crearPresentacion');
-    Route::post('guardarPresentacion', 'BackEnd\PresentacionController@store')->name('guardarPresentacion');
-    Route::get('editarPresentacion/{id}', 'BackEnd\PresentacionController@show')->name('editarPresentacion');
-    Route::post('updatePresentacion/{id}', 'BackEnd\PresentacionController@update')->name('updatePresentacion');
-    Route::get('eliminarPresentacion/{id}', 'BackEnd\PresentacionController@destroy')->name('eliminarPresentacion');
+//RUTAS PRESENTACION
+//    Route::get('presentacion', 'BackEnd\PresentacionController@index')->name('presentacion');
+//    Route::get('crearPresentacion', 'BackEnd\PresentacionController@create')->name('crearPresentacion');
+//    Route::post('guardarPresentacion', 'BackEnd\PresentacionController@store')->name('guardarPresentacion');
+//    Route::get('editarPresentacion/{id}', 'BackEnd\PresentacionController@show')->name('editarPresentacion');
+//    Route::post('updatePresentacion/{id}', 'BackEnd\PresentacionController@update')->name('updatePresentacion');
+//    Route::get('eliminarPresentacion/{id}', 'BackEnd\PresentacionController@destroy')->name('eliminarPresentacion');
 
 //  RUTAS DE PEDIDO
     Route::get('pedidos', 'BackEnd\PedidoController@index')->name('pedidos');

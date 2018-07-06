@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 class Pedido extends Model
 {
     protected $fillable = [
-        'fecha_entrega', 'fecha_pedido', 'direccion_entrega', 'hora_entrega', 'total_monto', 'id_usuario', 'id_estado','id_producto'
+        'fecha_entrega', 'fecha_pedido', 'direccion_entrega', 'hora_entrega', 'total_monto', 'id_usuario', 'id_estado','id_producto','id_insumo',
     ];
 
 
@@ -32,5 +32,12 @@ class Pedido extends Model
     {
         return $this->hasMany(Producto::Class);
     }
+
+    public function insumos()
+    {
+        return $this->hasMany(Insumo::Class);
+    }
+
+
 
 }
