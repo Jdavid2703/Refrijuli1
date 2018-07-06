@@ -17,7 +17,7 @@ class CreateInsumosTable extends Migration
 
             $table->increments('id');
             $table->string('nombre');
-            $table->multiLineString('descripcion');
+            $table->string('descripcion');
             $table->integer('cantidad');
             $table->integer('stock_min');
             $table->integer('stock_max');
