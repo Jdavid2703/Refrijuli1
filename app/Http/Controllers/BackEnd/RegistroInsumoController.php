@@ -30,7 +30,7 @@ class RegistroInsumoController extends Controller
         $credenciales = $this->validate($request, [
             'nombre' => 'required',
             'descripcion' => 'required',
-            'cantidad' => 'required',
+            'cantida' => 'required',
             'stock_min' => 'required',
             'stock_max' => 'required',
             'precio_unitario' => 'required',
