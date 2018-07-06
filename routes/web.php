@@ -17,64 +17,64 @@
 
 ////************************  TIPOS DD DOCUMENTO******************
 
-route::get('cc',function (){
-   $usuario = new App\models\TipoDocumento();
-    $usuario->nombre ='CC';
-    $usuario->descripcion ='Cedula de Ciudadania';
-    $usuario->save();
-   return $usuario;
-});
-
-route::get('ti',function (){
+route::get('cc', function () {
     $usuario = new App\models\TipoDocumento();
-    $usuario->nombre ='TI';
-    $usuario->descripcion ='Tarjeta de Identidad';
+    $usuario->nombre = 'CC';
+    $usuario->descripcion = 'Cedula de Ciudadania';
     $usuario->save();
     return $usuario;
 });
 
-route::get('ce',function (){
+route::get('ti', function () {
     $usuario = new App\models\TipoDocumento();
-    $usuario->nombre ='CE';
-    $usuario->descripcion ='Cedula de extrajeria';
+    $usuario->nombre = 'TI';
+    $usuario->descripcion = 'Tarjeta de Identidad';
     $usuario->save();
     return $usuario;
 });
 
-route::get('pp',function (){
+route::get('ce', function () {
     $usuario = new App\models\TipoDocumento();
-    $usuario->nombre ='PP';
-    $usuario->descripcion ='Pasaporte';
+    $usuario->nombre = 'CE';
+    $usuario->descripcion = 'Cedula de extrajeria';
     $usuario->save();
-  return $usuario;
+    return $usuario;
+});
+
+route::get('pp', function () {
+    $usuario = new App\models\TipoDocumento();
+    $usuario->nombre = 'PP';
+    $usuario->descripcion = 'Pasaporte';
+    $usuario->save();
+    return $usuario;
 });
 
 
 /////////// ********************      ROLES      ***********************************
 
 
-route::get('rol1',function (){
+route::get('rol1', function () {
     $usuario = new App\models\Rol();
-    $usuario->rol ='Admin';
-   $usuario->descripcion ='Administrador';
+    $usuario->rol = 'Admin';
+    $usuario->descripcion = 'Administrador';
     $usuario->save();
-   return $usuario;
+    return $usuario;
 });
 
-route::get('rol2',function (){
+route::get('rol2', function () {
     $usuario = new App\models\Rol();
-    $usuario->rol ='Usuario';
-   $usuario->descripcion ='Usuario';
-   $usuario->save();
+    $usuario->rol = 'Usuario';
+    $usuario->descripcion = 'Usuario';
+    $usuario->save();
     return $usuario;
 });
 
 
-route::get('usuario1',function (){
+route::get('usuario1', function () {
     $usuario = new App\Models\Usuario;
-    $usuario->nombre ='Juan';
-    $usuario->apellido ='Hernandez';
-   $usuario->correo = 'gonzy@hotmail.com';
+    $usuario->nombre = 'Juan';
+    $usuario->apellido = 'Hernandez';
+    $usuario->correo = 'gonzy@hotmail.com';
     $usuario->numero = '1193579344';
     $usuario->usuario = 'juan';
     $usuario->password = bcrypt('123');
@@ -83,14 +83,14 @@ route::get('usuario1',function (){
     return $usuario;
 });
 
-route::get('usuario2',function (){
+route::get('usuario2', function () {
     $usuario = new App\Models\Usuario;
-    $usuario->nombre ='Mateo';
-    $usuario->apellido ='Lopez';
+    $usuario->nombre = 'Mateo';
+    $usuario->apellido = 'Lopez';
     $usuario->correo = 'mate33@hotmail.com';
     $usuario->numero = '98765';
     $usuario->usuario = 'mateo';
-  $usuario->password = bcrypt('123');
+    $usuario->password = bcrypt('123');
     $usuario->tipo_documentos_id = '1';
     $usuario->save();
     return $usuario;
@@ -100,7 +100,6 @@ route::get('usuario2',function (){
 Route::get('/', 'VistasController\VistaController@index')->name('/');
 Route::get('informacion', 'VistasController\VistaController@informacion')->name('informacion');
 Route::get('contactos', ['as' => 'contactos', 'uses' => 'VistasController\VistaController@contactos']);
-
 
 Route::get('registro', 'BackEnd\RegistroUsuController@index')->name('registro');
 
@@ -192,14 +191,12 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
     Route::get('eliminarPedido/{id}', 'BackEnd\RegistroPedidoController@destroy')->name('eliminarPedido');
 
 
-
-
-
-
     Route::get('tipoDocumentos', 'BackEnd\TipoDocumentoController@index')->name('tipoDocumentos');
 
     Route::get('cerrarSesion', 'Auth\LoginController@cerrarSesion')->name('cerrarSesion');
 });
+
+
 
 
 
