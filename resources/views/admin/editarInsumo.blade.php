@@ -112,7 +112,7 @@
                     </div>
 
                     <div class="col-md-5">
-                        <label for="precio_unitario"><b>Precio Unitari</b></label>
+                        <label for="precio_unitario"><b>Precio Unitario</b></label>
                         <input type="text" class="form-control" value="{{$insumoid->precio_unitario}}" id="numero" name="precio_unitario"
                                aria-describedby="emailHelp">
                     </div>
