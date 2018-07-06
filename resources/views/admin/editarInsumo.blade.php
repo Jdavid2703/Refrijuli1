@@ -1,4 +1,4 @@
-stock_min@extends('admin.layaut.loyaut')
+@extends('admin.layaut.loyaut')
 
 <form action="{{route('updateInsumo',$insumoid->id)}}" method="post">
     {{csrf_field()}}
@@ -36,7 +36,7 @@ stock_min@extends('admin.layaut.loyaut')
 
                         <div class="form-group">
                             <label for="descripcion"><b>Descripcion</b></label>
-                            <input type="date" class="form-control" value="{{$insumoid->descripcion}}" id="apellido" name="descripcion"
+                            <input type="text" class="form-control" value="{{$insumoid->descripcion}}" id="apellido" name="descripcion"
                                    aria-describedby="emailHelp">
                         </div>
                     </div>
@@ -63,7 +63,7 @@ stock_min@extends('admin.layaut.loyaut')
                         <div class="form-group">
 
                             <label for="stock_min"><b>Stock Min</b></label>
-                            <input type="time" class="form-control" value="{{$insumoid->stock_min}}" id="numero" name="stock_min"
+                            <input type="text" class="form-control" value="{{$insumoid->stock_min}}" id="numero" name="stock_min"
                                    aria-describedby="emailHelp">
 
                         </div>

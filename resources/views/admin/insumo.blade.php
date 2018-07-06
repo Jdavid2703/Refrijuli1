@@ -74,17 +74,15 @@ if (!$enlace) {
                     <td><?php echo $mostrar['id_categoria']?></td>
                     <td><?php echo $mostrar['stock_min']?></td>
                     <td><?php echo $mostrar['stock_max']?></td>
-                    <td><?php echo $mostrar['id_presentacion']?></td>
-                    <td><?php echo $mostrar['id_unidad']?></td>
                     <td><?php echo $mostrar['precio_unitario']?></td>
                     <td><?php echo $mostrar['disponibilidad']?></td>
 
 
 
                     <td>
-                        <a class="btn btn-primary" href="#">Eliminar</a>
+                        <a class="btn btn-primary" href="{{route('eliminarInsumo',$mostrar['id'])}}">Eliminar</a>
 
-                        <a class="btn btn-primary" href="#">Editar</a>
+                        <a class="btn btn-primary" href="{{route('editarInsumo',$mostrar['id'])}}">Editar</a>
                     </td>
 
                 </tr>
