@@ -49,6 +49,7 @@ if (!$enlace) {
                     <th scope="col">id Usuario</th>
                     <th scope="col">id Estado</th>
                     <th scope="col">id Producto</th>
+                    <th scope="col">id Insumo</th>
 
 
                 </tr>
@@ -59,7 +60,7 @@ if (!$enlace) {
 
                 <?php
 
-                $sql = "SELECT id, fecha_entrega, fecha_pedido, direccion_entrega, hora_entrega, total_monto, id_usuario, id_estado, id_producto FROM pedidos";
+                $sql = "SELECT id, fecha_entrega, fecha_pedido, direccion_entrega, hora_entrega, total_monto, id_usuario, id_estado, id_producto, id_insumo FROM pedidos";
                 $result = mysqli_query($enlace, $sql);
 
 
@@ -76,6 +77,7 @@ if (!$enlace) {
                     <td><?php echo $mostrar['id_usuario']?></td>
                     <td><?php echo $mostrar['id_estado']?></td>
                     <td><?php echo $mostrar['id_producto']?></td>
+                    <td><?php echo $mostrar['id_insumo']?></td>
                     <td>
                         <a class="btn btn-primary" href="{{route('eliminarPedido',$mostrar['id'])}}">Eliminar</a>
 
