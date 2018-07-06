@@ -160,6 +160,12 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 
 //RUTAS INSUMO
     Route::get('insumo', 'BackEnd\InsumoController@index')->name('insumo');
+    Route::get('registroInsumo', 'BackEnd\RegistroInsumoController@index')->name('registroInsumo');
+    Route::post('guardarInsumo', 'BackEnd\RegistroInsumoController@store')->name('guardarInsumo');
+    Route::get('editarInsumo/{id}', 'BackEnd\RegistroInsumoController@show')->name('editarInsumo');
+    Route::post('updateInsumo/{id}', 'BackEnd\RegistroInsumoController@update')->name('updateInsumo');
+    Route::get('eliminarInsumo/{id}', 'BackEnd\RegistroInsumoController@destroy')->name('eliminarInsumo');
+
 
 //  RUTAS CATEGORIAS
     Route::get('categoria', 'BackEnd\CategoriaController@index')->name('categoria');

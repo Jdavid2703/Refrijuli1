@@ -7,6 +7,7 @@ use App\Models\Pedido;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+
 class RegistroPedidoController extends Controller
 {
 
